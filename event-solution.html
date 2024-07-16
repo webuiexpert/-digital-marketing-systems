@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+    <!-- npx tailwindcss -i ./input.css -o ./style.css --watch -->
+    <title>Event Solution</title>
+</head>
+
+<body>
+    <div class="eventSolution-Wrapper bg-black overflow-hidden">
+        <div class="mainSection w-full lg:h-screen py-10"
+            style="background-image: url('./images/digitalSolutionMain-bg.png');background-position:center ;background-repeat: no-repeat;background-size: cover;">
+            <div class="containers flex flex-col justify-between items-center">
+                <nav class="w-full absolute z-50 top-0 left-0 lg:py-4  lg:pb-0 bg-transparent">
+                    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                        <a class="navbarLogo" href="/digital-marketing-systems" class="flex items-center space-x-3 rtl:space-x-reverse">
+                            <img src="./images/logo.svg" alt="">
+                        </a>
+                        <button data-collapse-toggle="navbar-dropdown" type="button"
+                            class="inline-flex items-center p-2 w-10 bg-white h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-[#FE6B02] focus:outline-none focus:ring-2 focus:ring-[#FE6B02]"
+                            aria-controls="navbar-dropdown" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 17 14">
+                                <path stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                            </svg>
+                        </button>
+                        <div class="hidden w-full  md:block md:w-auto" id="navbar-dropdown">
+                            <ul
+                                class="navbarList flex lg:items-start flex-col font-medium p-4 md:p-0 mt-5 lg:bg-transparent lg:bg-white bg-[--blue-btn] text-white rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0">
+                                <li>
+                                    <a href="about-us.html"
+                                        class="block py-2 lg:mb-0 mb-3 px-3 text-white rounded  hover:text-[#FE6B02] md:p-0  dark:bg-blue-600 md:dark:bg-transparent"
+                                        aria-current="page">About Us</a>
+                                </li>
+                                <li
+                                    class="rounded-lg px-3 hover:bg-gray-100 hover:text-[#FE6B02] md:hover:bg-transparent md:border-0  md:w-auto dark:text-white md:hover:text-[#FE6B02] dark:focus:text-white relative z-50 ">
+                                    <button class="flex items-center justify-center">
+                                        <a href="services.html"
+                                            class="servicelink flex items-center justify-between w-full lg:py-0 py-2">Our Services
+                                        </a>
+                                        <svg id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                                            class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
+                                             fill="none" viewBox="0 0 10 6">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="m1 1 4 4 4-4" />
+                                        </svg>
+                                    </button>
+
+                                    <!-- Dropdown menu -->
+                                    <div id="dropdownNavbar"
+                                        class="dropservices hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                                            aria-labelledby="dropdownLargeButton">
+                                            <li>
+                                                <a href="digital-solution.html"
+                                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 hover:text-[#FE6B02]">Branding
+                                                    solution</a>
+                                            </li>
+                                            <li>
+                                                <a href="training-solution.html"
+                                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 hover:text-[#FE6B02]">Traning
+                                                    solution</a>
+                                            </li>
+                                            <li>
+                                                <a href="event-solution.html"
+                                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 hover:text-[#FE6B02]">Event
+                                                    solution</a>
+                                            </li>
+                                            <li>
+                                                <a href="blockchain-solution.html"
+                                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 hover:text-[#FE6B02]">Blockchain
+                                                    solution</a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </li>
+                                <li class="rounded-lg lg:mb-0 mb-4 px-3 lg:py-0 py-2 hover:bg-gray-100 hover:text-[#FE6B02] md:hover:bg-transparent md:border-0  md:w-auto dark:text-white md:hover:text-[#FE6B02] dark:focus:text-white >
+                                    <a href=" #" class="block py-2 text-white">Blog</a>
+                                </li>
+                                <li class="relative z-10">
+                                    <a href="#" title=""
+                                        class=" border items-start justify-start px-8 py-2 lg:ml-10 text-white text-base font-semibold bg-[color:var(--orange-btn)] transition-all duration-200  border-[#000] rounded-[50px] lg:inline-flex hover:bg-[color:var(--blue-btn)] focus:bg-[color:var(--orange-btn)]"
+                                        role="button">Let's Talk</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="lg:mt-64 mt-20 headeingPart relative lg:w-[70%] w-[100%] flex flex-col items-start">
+                    <h2 class="lg:text-[82px] text-[45px] leading-[1.2em] text-white lg:ml-20 font-[Geomanist-bold]">
+                        EVENT</h2>
+                    <div class="imgheading z-20 lg:flex-row-reverse flex flex-col lg:items-center lg:gap-5 gap-2">
+                        <h2 class="lg:text-[82px] text-[45px] leading-[1.2em] text-white font-[Geomanist-bold]">SOLUTION
+                        </h2>
+                        <div class="arrowdiv w-32 lg:w-36"><img class="100%" src="./images/click-arrow.png" alt="">
+                        </div>
+
+                    </div>
+                    <div class="w-[54%] z-10 animateImg absolute lg:-top-36 left-44 lg:left-96">
+                        <img class="100%" src="./images/digitalSolutionMain-img.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <section class="sm:py-20 py-10">
+            <div class="containers">
+                <!-- component -->
+                <div class="grid gap-5 grid-cols-12 gap-y-5">
+
+                    <div class="grid lg:grid-cols-2 grid-cols-1 col-span-12 rounded-lg py-8">
+                        <div class="pringHeading text-[#FE6B02]">
+                            <p>Spring Floral Festival</p>
+                            <h2 class="text-4xl font-[Geomanist-bold] text-white">2016-2020</h2>
+
+                        </div>
+                        <div class="textSect relative">
+                            <img class="absolute  z-0 right-0 -top-44" src=".//images/spring-floral-festival-vector.png"
+                                alt="">
+                            <p class="text-[14px] w-56 text-start float-end">Scale of Project: 19398 m2 Times: 2016 |
+                                2017 | 2018 | 2019 | 2020 Categories: Design | Construction Thread: HOA ĐỒNG CỎ NỘI</p>
+                        </div>
+                    </div>
+
+                    <div class="col-span-12 rounded-lg  sm:col-span-7">
+                        <div class="imgBox1">
+                            <img src="./images/spring-floral-festival-img1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-span-12 rounded-lg relative z-20 flex flex-col lg:px-3 gap-3 sm:col-span-5">
+                        <!-- Sidebar Content -->
+                        <div class="imgBox2 rounded-[20px] lg:mt-0 mt-4">
+                            <img class="rounded-[20px] border" src="./images/spring-floral-festival-img2.png" alt="">
+                        </div>
+                        <div class="imgBox3 rounded-[20px]   lg:mt-0 mt-4">
+                            <img class="rounded-[20px]" src="./images/spring-floral-festival-img3.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="bg-white h-[1px] containers">
+        <section class="sm:py-20 py-10">
+            <div class="containers">
+                <!-- component -->
+                <div class="grid gap-5 grid-cols-12 gap-y-5">
+
+                    <div
+                        class=" grid-cols-2 col-span-12 flex lg:flex-row flex-col justify-between items-center rounded-lg py-8">
+                        <div class="textSect relative ">
+                            <img class="absolute  z-0 left-0 -bottom-14"
+                                src=".//images/spring-floral-festival-vector2.png" alt="">
+                            <p class="text-[14px] w-48 text-start float-end">Time: 13/01/2022 Categories: Event
+                                organization</p>
+                        </div>
+                        <div class="pringHeading text-[#FE6B02] float-end">
+                            <p class="text-end">Project inauguration ceremony</p>
+                            <p class="w-[214px] text-[#FE6B02] text-end">Hanoi Urban Railway CAT LINH - HA DONG</p>
+                            <h2 class="text-4xl font-[Geomanist-bold] text-white text-end">2022</h2>
+
+                        </div>
+                    </div>
+
+                    <div class="col-span-12 rounded-lg sm:col-span-7 pt-3">
+                        <div class="imgBox1 w-full h-[100%]">
+                            <img class="rounded-[20px] w-[100%]" src="./images/Hanoi-urban-img1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-span-12 rounded-lg relative z-20 flex flex-col lg:px-3 gap-3 sm:col-span-5">
+                        <!-- Sidebar Content -->
+                        <div class="imgBox2 rounded-[20px] lg:mt-0 mt-4 lg:pl-4">
+                            <img class="rounded-[20px]" src="./images/Hanoi-urban-img2.png" alt="">
+                        </div>
+                        <div class="imgBox3 rounded-[20px]   lg:mt-0 mt-4">
+                            <img class="rounded-[20px]" src="./images/Hanoi-urban-img3.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ----------Footer Section ----------- -->
+
+        <div class="footer bg-black w-full h-auto ">
+            <div class="containers flex flex-col footer justify-center items-center lg:h-screen ">
+                <div
+                    class="wrapper-text&iconBox relative w-full flex items-center justify-center lg:h-[100vh] h-[50vh]">
+                    <div
+                        class="w-full  text&iconBox flex flex-col items-center text-center bg-transparent absolute z-10 top-[30%] left-[0%] translate-x-1">
+                        <p class="text-[--orange-btn] text-[20px]">Let’s Work Together</p>
+                        <h2 class="text-2xl font-semibold leading-tight text-white sm:text-2xl lg:text-3xl">Speed Up
+                            Your Time To Market</h2>
+                        <a href="#" title=""
+                            class=" mt-16 items-center justify-center hidden px-10 py-1 text-white text-[20px] font-semibold bg-[color:var(--orange-btn)] transition-all duration-200 border border-transparent rounded-[50px] lg:inline-flex hover:bg-[color:var(--blue-btn)] focus:bg-[color:var(--orange-btn)]"
+                            role="button">Talk With Us</a>
+                    </div>
+                    <div
+                        class="iconSet absolute top-[10%] right-[20%] -translate-x-1/3 translate-y-1 rounded-[50%] flex items-center justify-center flex-col w-[450px] h-[450px] z-0">
+                    </div>
+                </div>
+                <div class="icon-wrapper relative z-10">
+                    <div class="containers flex gap-10">
+                        <a class="hover:-mt-3 duration-500" href="facebook.com"><img src="./images/fb-icon.png" alt=""
+                                width="60"></a>
+                        <a class="hover:-mt-3 duration-500" href="youtube.com"><img src="./images/yt-icon.png" alt=""
+                                width="60"></a>
+                        <a class="hover:-mt-3 duration-500" href="linkedin.in"><img src="./images/linked-icon.png" alt=""
+                                width="60"></a>
+                        <a class="hover:-mt-3 duration-500" href="x.com"><img src="./images/X-icon.png" alt=""
+                                width="60"></a>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <hr class="w-full lg:mt-10 my-7 h-[0.1px] bg-[#949494]">
+            <div class="flogo flex items-start justify-center flex-col containers h-[10%] py-5">
+                <a href="#"><img src="./images/logo.svg" alt=""></a>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/animation.js"></script>
+</body>
+
+</html>

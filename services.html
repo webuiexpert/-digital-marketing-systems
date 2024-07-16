@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Marketing System</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- npx tailwindcss -i ./input.css -o ./style.css --watch -->
+</head>
+<body>
+    <div class="main-wrapper overflow-hidden">
+
+        <div class="overflow-hidden HeroSection bg-right w-full lg:h-screen py-10 relative flex justify-center items-center">
+           
+
+            <nav class="w-full absolute z-50 top-0 left-0 lg:py-4  lg:pb-0 bg-transparent">
+                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                    <a class="navbarLogo" href="/digital-marketing-systems" class="flex items-center space-x-3 rtl:space-x-reverse">
+                        <img src="./images/logo.svg" alt="">
+                    </a>
+                    <button data-collapse-toggle="navbar-dropdown" type="button"
+                        class="inline-flex items-center p-2 w-10 bg-white h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-[#FE6B02] focus:outline-none focus:ring-2 focus:ring-[#FE6B02]"
+                        aria-controls="navbar-dropdown" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                    <div class="hidden w-full  md:block md:w-auto" id="navbar-dropdown">
+                        <ul
+                            class="navbarList flex lg:items-start flex-col font-medium p-4 md:p-0 mt-5 lg:bg-transparent lg:bg-white bg-[--blue-btn] text-white rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0">
+                            <li>
+                                <a href="about-us.html"
+                                    class="block py-2 lg:mb-0 mb-3 px-3 text-white rounded  hover:text-[#FE6B02] md:p-0  dark:bg-blue-600 md:dark:bg-transparent"
+                                    aria-current="page">About Us</a>
+                            </li>
+                            <li
+                                class="rounded-lg px-3 hover:bg-gray-100 hover:text-[#FE6B02] md:hover:bg-transparent md:border-0  md:w-auto dark:text-white md:hover:text-[#FE6B02] dark:focus:text-white relative z-50 ">
+                                <button class="flex items-center justify-center">
+                                    <a href="services.html"
+                                        class="servicelink flex items-center justify-between w-full lg:py-0 py-2">Our Services
+                                    </a>
+                                    <svg id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                                        class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
+                                         fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m1 1 4 4 4-4" />
+                                    </svg>
+                                </button>
+
+                                <!-- Dropdown menu -->
+                                <div id="dropdownNavbar"
+                                    class="dropservices hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                                        aria-labelledby="dropdownLargeButton">
+                                        <li>
+                                            <a href="digital-solution.html"
+                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 hover:text-[#FE6B02]">Branding
+                                                solution</a>
+                                        </li>
+                                        <li>
+                                            <a href="training-solution.html"
+                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 hover:text-[#FE6B02]">Traning
+                                                solution</a>
+                                        </li>
+                                        <li>
+                                            <a href="event-solution.html"
+                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 hover:text-[#FE6B02]">Event
+                                                solution</a>
+                                        </li>
+                                        <li>
+                                            <a href="blockchain-solution.html"
+                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 hover:text-[#FE6B02]">Blockchain
+                                                solution</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                            <li class="rounded-lg lg:mb-0 mb-4 px-3 lg:py-0 py-2 hover:bg-gray-100 hover:text-[#FE6B02] md:hover:bg-transparent md:border-0  md:w-auto dark:text-white md:hover:text-[#FE6B02] dark:focus:text-white >
+                                <a href=" #" class="block py-2 text-white">Blog</a>
+                            </li>
+                            <li class="relative z-10">
+                                <a href="#" title=""
+                                    class=" border items-start justify-start px-8 py-2 lg:ml-10 text-white text-base font-semibold bg-[color:var(--orange-btn)] transition-all duration-200  border-[#000] rounded-[50px] lg:inline-flex hover:bg-[color:var(--blue-btn)] focus:bg-[color:var(--orange-btn)]"
+                                    role="button">Let's Talk</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+  
+            <div class=" headingBox max-w-5xl mx-auto lg:mt-10 mt-20">
+                <h2 class="font-[Geomanist-bold] text-white text-5xl lg:text-7xl w-[10%] mb-5 text-center">BUILDING DIGITAL BRANDS
+                </h2>
+                <div class="containers imgParaBox flex lg:flex-row flex-col justify-between items-start mt-2 gap-2 lg:gap-5">
+                    <div class="imgcol lg:w-[100%] w-1/2"><a href="#"><img class="w-[100%]" src="./images/click-arrow.png"
+                                alt="click-arrow"></a> </div>
+                    <div class="para">
+                        <h2 class="text-white font-[Geomanist-bold] text-5xl ml-10 lg:text-7xl  lg:w-[550px] lg:text-start text-start leading-[66px]">& PRODUCTS</h2>
+                        <p class="text-[16px] lg:w-[510px]">Provide comprehensive Marketing strategies and solutions for Blockchain projects including Blockchain Technology, Preparation Phase, Fundraising,Marketing Management, Community Management, PR & Influencers, Seeding & Shilling…</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="AllSixSection">
+            <section class="content-management bg-black py-10 lg:py-16">
+                <div data-aos="fade-left" class="serv1 containers px-4 mx-auto sm:px-6 lg:px-8">
+                    <div class="grid items-center md:grid-cols-2 gap-y-10 md:gap-x-10">
+                        <div class=" sm:pr-0">
+                            <div class="relative">
+                                <img class="object-bottom rounded-md" src="./images/web-content-managemnet.png"
+                                    alt="" />
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-start gap-0 sm:gap-10">
+                            <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">Website
+                                REDesign & Content Management</h2>
+                            <ul class="text-white text-base leading-relaxed list-disc list-inside">
+                                <li>Create service/product articles: services/products introduction articles, news
+                                    updates, knowledge sharing articles, toplist articles, business introduction and
+                                    business activities. </li>
+                                <li>Optimize SEO standards for articles and websites.</li>
+                                <li>Support image processing – Banner</li>
+                            </ul>
+                            <a href="#" title=""
+                                class="items-center justify-center hidden px-8 py-2 text-white text-base font-semibold bg-[color:var(--blue-btn)] transition-all duration-200 border border-transparent rounded-[50px] lg:inline-flex hover:bg-[color:var(--orange-btn)] focus:bg-[color:var(--orange-btn)]"
+                                role="button">Send Brief</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="Fanpage-management py-5 bg-[#0D0F19] sm:py-5 lg:py-16">
+                <div data-aos="fade-right" class="serv2 containers px-4 mx-auto sm:px-6 lg:px-8">
+                    <div class="grid items-center md:grid-cols-2 gap-y-10 md:gap-x-10">
+                        <div class="flex flex-col items-start gap-0 sm:gap-10">
+                            <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">Content Planning & Fanpage Management</h2>
+                            <ul class="text-white text-base leading-relaxed list-disc list-inside">
+                                <li>Plan content by month</li>
+                                <li>Post content, images for Fanpage</li>
+                                <li>Seeding comments Image</li>
+                                <li>support – Banner</li>
+                            </ul>
+                            <a href="#" title=""
+                                class="items-center justify-center hidden px-8 py-2 text-white text-base font-semibold bg-[color:var(--blue-btn)] transition-all duration-200 border border-transparent rounded-[50px] lg:inline-flex hover:bg-[color:var(--orange-btn)] focus:bg-[color:var(--orange-btn)]"
+                                role="button">Send Brief</a>
+                        </div>
+                        <div class=" sm:pr-0">
+                            <div class="relative">
+                                <img class="object-bottom rounded-md" src="./images/web-content-managemnet.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="channel-management py-5 bg-black sm:py-5 lg:py-16">
+                <div data-aos="fade-left" class="serv3 containers px-4 mx-auto sm:px-6 lg:px-8">
+                    <div class="grid items-center md:grid-cols-2 gap-y-10 md:gap-x-10">
+                        <div class=" sm:pr-0">
+                            <div class="relative">
+                                <img class="object-bottom rounded-md" src="./images/channel-management.png" alt="" />
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-start gap-0 sm:gap-10">
+                            <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">Website
+                                Design & Content Management</h2>
+                            <ul class="text-white text-base leading-relaxed list-disc list-inside">
+                                <li>Create service/product articles: services/products introduction articles, news
+                                    updates, knowledge sharing articles, toplist articles, business introduction and
+                                    business activities. </li>
+                                <li>Optimize SEO standards for articles and websites.</li>
+                                <li>Support image processing – Banner</li>
+                            </ul>
+                            <a href="#" title=""
+                                class="items-center justify-center hidden px-8 py-2 text-white text-base font-semibold bg-[color:var(--blue-btn)] transition-all duration-200 border border-transparent rounded-[50px] lg:inline-flex hover:bg-[color:var(--orange-btn)] focus:bg-[color:var(--orange-btn)]"
+                                role="button">Send Brief</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="development-strategy py-5 bg-[#0D0F19] sm:py-5 lg:py-16">
+                <div data-aos="fade-right" class="serv4 containers px-4 mx-auto sm:px-6 lg:px-8">
+                    <div class="grid items-center md:grid-cols-2 gap-y-10 md:gap-x-10">
+                        <div class="flex flex-col items-start gap-0 sm:gap-10">
+                            <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">Content Planning & Fanpage Management</h2>
+                            <ul class="text-white text-base leading-relaxed list-disc list-inside">
+                                <li>Plan content by month</li>
+                                <li>Post content, images for Fanpage</li>
+                                <li>Seeding comments Image</li>
+                                <li>support – Banner</li>
+                            </ul>
+                            <a href="#" title=""
+                                class="items-center justify-center hidden px-8 py-2 text-white text-base font-semibold bg-[color:var(--blue-btn)] transition-all duration-200 border border-transparent rounded-[50px] lg:inline-flex hover:bg-[color:var(--orange-btn)] focus:bg-[color:var(--orange-btn)]"
+                                role="button">Send Brief</a>
+                        </div>
+                        <div class="sm:pr-0">
+                            <div class="relative">
+                                <img class="object-bottom rounded-md" src="./images/development-strategy.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="professional-brand py-5 bg-black sm:py-5 lg:py-16">
+                <div data-aos="fade-left" class="serv5 containers px-4 mx-auto sm:px-6 lg:px-8">
+                    <div class="grid items-center md:grid-cols-2 gap-y-10 md:gap-x-10">
+                        <div class="sm:pr-0">
+                            <div class="relative">
+                                <img class="object-bottom rounded-md" src="./images/professional-brand.png"
+                                    alt="" />
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-start gap-0 sm:gap-10">
+                            <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">Website
+                                Design & Content Management</h2>
+                            <ul class="text-white text-base leading-relaxed list-disc list-inside">
+                                <li>Create service/product articles: services/products introduction articles, news
+                                    updates, knowledge sharing articles, toplist articles, business introduction and
+                                    business activities. </li>
+                                <li>Optimize SEO standards for articles and websites.</li>
+                                <li>Support image processing – Banner</li>
+                            </ul>
+                            <a href="#" title=""
+                                class="items-center justify-center hidden px-8 py-2 text-white text-base font-semibold bg-[color:var(--blue-btn)] transition-all duration-200 border border-transparent rounded-[50px] lg:inline-flex hover:bg-[color:var(--orange-btn)] focus:bg-[color:var(--orange-btn)]"
+                                role="button">Send Brief</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="development-strategy1 py-5 bg-[#0D0F19] sm:py-5 lg:py-16">
+                <div data-aos="fade-right" class="serv6 containers px-4 mx-auto sm:px-6 lg:px-8">
+                    <div class="grid items-center md:grid-cols-2 gap-y-10 md:gap-x-10">
+                        <div class="flex flex-col items-start gap-0 sm:gap-6">
+                            <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">CONSULTING & BRAND DEVELOPMENT STRATEGY</h2>
+                            <ul class="text-white text-base leading-relaxed">
+                                <li>Vietnam DMS has a great relationship with a variety of Hot Influencers and KOLs in various fields. With the experience that we have gained from actual projects and well-built plans, Vietnam DMS believes that it will be able to bring all business messages to a wide range of users.</li>
+                                <li>Besides booking Hot Influencers and KOLs, Vietnam DMS is also a leading advertising agency, owning a team of editors with many years of experience working in the field of journalism. At the same time, it has a cooperative relationship with many reputable online newspapers and news sites that have a huge amount of traffic.</li>
+                            </ul>
+                            <a href="#" title=""
+                                class="items-center justify-center hidden px-8 py-2 text-white text-base font-semibold bg-[color:var(--blue-btn)] transition-all duration-200 border border-transparent rounded-[50px] lg:inline-flex hover:bg-[color:var(--orange-btn)] focus:bg-[color:var(--orange-btn)]"
+                                role="button">Send Brief</a>
+                        </div>
+                        <div class="sm:pr-0">
+                            <div class="relative">
+                                <img class="object-bottom rounded-md" src="./images/development-strategy1.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ----------Footer Section ----------- -->
+
+        <div class="footer bg-black w-full h-auto ">
+            <div class="containers flex flex-col footer justify-center items-center lg:h-screen ">
+                <div
+                    class="wrapper-text&iconBox relative w-full flex items-center justify-center lg:h-[100vh] h-[50vh]">
+                    <div
+                        class="w-full  text&iconBox flex flex-col items-center text-center bg-transparent absolute z-10 top-[30%] left-[0%] translate-x-1">
+                        <p class="text-[--orange-btn] text-[20px]">Let’s Work Together</p>
+                        <h2 class="text-2xl font-semibold leading-tight text-white sm:text-2xl lg:text-3xl">Speed Up
+                            Your Time To Market</h2>
+                        <a href="#" title=""
+                            class=" mt-16 items-center justify-center hidden px-10 py-1 text-white text-[20px] font-semibold bg-[color:var(--orange-btn)] transition-all duration-200 border border-transparent rounded-[50px] lg:inline-flex hover:bg-[color:var(--blue-btn)] focus:bg-[color:var(--orange-btn)]"
+                            role="button">Talk With Us</a>
+                    </div>
+                    <div
+                        class="iconSet absolute top-[10%] right-[20%] -translate-x-1/3 translate-y-1 rounded-[50%] flex items-center justify-center flex-col w-[450px] h-[450px] z-0">
+                    </div>
+                </div>
+                <div class="icon-wrapper relative z-10">
+                    <div class="containers flex gap-10">
+                        <a class="hover:-mt-3 duration-500" href="#"><img src="./images/fb-icon.png" alt=""
+                                width="60"></a>
+                        <a class="hover:-mt-3 duration-500" href="#"><img src="./images/yt-icon.png" alt=""
+                                width="60"></a>
+                        <a class="hover:-mt-3 duration-500" href="#"><img src="./images/linked-icon.png" alt=""
+                                width="60"></a>
+                        <a class="hover:-mt-3 duration-500" href="#"><img src="./images/X-icon.png" alt=""
+                                width="60"></a>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <hr class="w-full lg:mt-10 my-7 h-[0.1px] bg-[#949494]">
+            <div class="flogo flex items-start justify-center flex-col containers h-[10%] py-5">
+                <a href="#"><img src="./images/logo.svg" alt=""></a>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script> AOS.init(); </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/animation.js"></script>
+</body>
+</html>

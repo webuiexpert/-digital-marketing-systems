@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+       
+    <!-- npx tailwindcss -i ./input.css -o ./style.css --watch -->
+
+    <title>About Us - Digital</title>
+    
+</head>
+
+<body>
+    <div class="about-wrapper overflow-hidden">
+        <div class="MainSection w-full pb-10"
+            style="background: url('./images/hero-bg-img.png'); background-position: center; background-size: cover;">
+            <div class="containers  flex justify-between items-center flex-col lg:gap-20 gap-10">
+                <nav class="w-full absolute z-50 top-0 left-0 lg:py-4  lg:pb-0 bg-transparent">
+                    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                        <a class="navbarLogo" href="/digital-marketing-systems" class="flex items-center space-x-3 rtl:space-x-reverse">
+                            <img src="./images/logo.svg" alt="">
+                        </a>
+                        <button data-collapse-toggle="navbar-dropdown" type="button"
+                            class="inline-flex items-center p-2 w-10 bg-white h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-[#FE6B02] focus:outline-none focus:ring-2 focus:ring-[#FE6B02]"
+                            aria-controls="navbar-dropdown" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 17 14">
+                                <path stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                            </svg>
+                        </button>
+                        <div class="hidden w-full  md:block md:w-auto" id="navbar-dropdown">
+                            <ul
+                                class="navbarList flex lg:items-start flex-col font-medium p-4 md:p-0 mt-5 lg:bg-transparent lg:bg-white bg-[--blue-btn] text-white rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0">
+                                <li>
+                                    <a href="about-us.html"
+                                        class="block py-2 lg:mb-0 mb-3 px-3 text-white rounded  hover:text-[#FE6B02] md:p-0  dark:bg-blue-600 md:dark:bg-transparent"
+                                        aria-current="page">About Us</a>
+                                </li>
+                                <li
+                                    class="rounded-lg px-3 hover:bg-gray-100 hover:text-[#FE6B02] md:hover:bg-transparent md:border-0  md:w-auto dark:text-white md:hover:text-[#FE6B02] dark:focus:text-white relative z-50 ">
+                                    <button class="flex items-center justify-center">
+                                        <a href="services.html"
+                                            class="servicelink flex items-center justify-between w-full lg:py-0 py-2">Our Services
+                                        </a>
+                                        <svg id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                                            class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
+                                             fill="none" viewBox="0 0 10 6">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="m1 1 4 4 4-4" />
+                                        </svg>
+                                    </button>
+
+                                    <!-- Dropdown menu -->
+                                    <div id="dropdownNavbar"
+                                        class="dropservices hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                                            aria-labelledby="dropdownLargeButton">
+                                            <li>
+                                                <a href="digital-solution.html"
+                                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 hover:text-[#FE6B02]">Branding
+                                                    solution</a>
+                                            </li>
+                                            <li>
+                                                <a href="training-solution.html"
+                                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 hover:text-[#FE6B02]">Traning
+                                                    solution</a>
+                                            </li>
+                                            <li>
+                                                <a href="event-solution.html"
+                                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 hover:text-[#FE6B02]">Event
+                                                    solution</a>
+                                            </li>
+                                            <li>
+                                                <a href="blockchain-solution.html"
+                                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 hover:text-[#FE6B02]">Blockchain
+                                                    solution</a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </li>
+                                <li class="rounded-lg lg:mb-0 mb-4 px-3 lg:py-0 py-2 hover:bg-gray-100 hover:text-[#FE6B02] md:hover:bg-transparent md:border-0  md:w-auto dark:text-white md:hover:text-[#FE6B02] dark:focus:text-white >
+                                    <a href=" #" class="block py-2 text-white">Blog</a>
+                                </li>
+                                <li class="relative z-10">
+                                    <a href="#" title=""
+                                        class=" border items-start justify-start px-8 py-2 lg:ml-10 text-white text-base font-semibold bg-[color:var(--orange-btn)] transition-all duration-200  border-[#000] rounded-[50px] lg:inline-flex hover:bg-[color:var(--blue-btn)] focus:bg-[color:var(--orange-btn)]"
+                                        role="button">Let's Talk</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="flex  items-center justify-center flex-col mt-36">
+                    <div class="about-img lg:w-2/1 w-1/3">
+                        <img class="100%" src="./images/about-main-img.png" alt="about-us img">
+                    </div>
+                    <div class="text-center mt-6 lg:w-full w-full ">
+                        <h1
+                            class="title-font sm:text-[52px] text-[42px] font-[Geomanist-bold] text-6xl mb-4 font-medium text-white">
+                            ABOUT US</h1>
+                        <p class="lg:mb-4 text-[16px] w-[90%] mx-auto mb-1 lg:w-[1020px]">Over the course of 4 years of
+                            construction and development, Vietnam DMS has become
+                            one of the leading agencies in the field of Marketing and Training.</p>
+                        <p class="lg:mb-4 text-[16px] w-[90%] mx-auto mb-1 lg:w-[990px]">Vietnam DMS implements projects
+                            by thoroughly researching all business Structure of an enterprise based on clear and
+                            specific goals.
+                        </p>
+                        <p class="lg:mb-4 text-[16px] w-[90%] mx-auto mb-1 lg:w-[990px]">With the strengths in media,
+                            technology and personnel with many years of experience, we confidently accompany businesses
+                            on the path of sustainable development. Therefore, we can fully exploit the power of media
+                            to make the trademarked business grow and grow stronger.</p>
+                        <div class="flex justify-center">
+                            <button
+                                class="mt-6 inline-flex text-white bg-[--blue-btn] border-0 py-2 px-10 focus:outline-none hover:bg-[--orange-btn] rounded-full text-lg">Send
+                                Brief</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ourMission w-full py-10 lg:py-36"
+            style="background: url('./images/our-mission-bg.png'); background-position: center; background-size: cover;">
+            <div class="ourMission containers">
+                <h2 class="missionText sm:text-4xl text-start text-2xl font-medium title-font mb-2 text-white">OUR MISSION</h2>
+                <p class="missionText lg:w-[545px]">With the mission of connecting brands with users and providing the best value for
+                    customers, Vietnam DMS has been providing comprehensive solutions for thousands of businesses such
+                    as branding, media planning, In addition, we also train marketers, blockchain programmers, plus plan
+                    and implement product launch strategies through creative and distinctive messages.</p>
+            </div>
+
+        </div>
+
+        <section class="coreValuesection py-10 bg-black sm:py-16 lg:py-20">
+            <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                <h2 class="text-white text-center text-4xl font-[Geomanist-bold] mb-5">CORE VALUES</h2>
+                <div class="grid grid-cols-1 gap-12 text-center sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 lg:gap-y-16">
+                    <div>
+                        <h3 class="lg:mt-8 text-2xl font-semibold text-white">SINCERE - SHAREABLE</h3>
+                        <p class="lg:mt-4 mt-2 text-white text-[13.5px]">We believe that sincerity and willingness to share will help customers' brands go further in the minds of customers.</p>
+                    </div>
+                    <div>
+                        <h3 class="lg:mt-8 text-2xl font-semibold text-white">SYMPATHETIC</h3>
+                        <p class="lg:mt-4 mt-2 text-white text-[13.5px]">We understand that success comes only when there is sympathetic and respect from both sides.</p>
+                    </div>
+                    <div>
+                        <h3 class="lg:mt-8 text-2xl font-semibold text-white">CREATIVE</h3>
+                        <p class="lg:mt-4 mt-2 text-white text-[13.5px]">We build creativity as a solid foundation which will turn the vision of a business into reality in the shortest time with the minimum cost.</p>
+                    </div>
+                    <div>
+                        <h3 class="lg:mt-8 text-2xl font-semibold text-white">DIFFERENT</h3>
+                        <p class="lg:mt-4 mt-2 text-white text-[13.5px]">In order to keep up with the continuous fluctuations of the market and the times, we understand that our core mission is to make a difference because only the difference makes it special.</p>
+                    </div>
+                </div>
+        </section>
+        <div class="whyChooseus bg-[#0D0F19] pt-10 lg:min-h-0 min-h-[90vh]">
+            <div class="containers px-36 relative">
+                <h6 class="text-center font-[Geomanist-regular] text-[#FE6B02]">Why Should Choose</h6>
+                <h2 class="text-center font-[Geomanist-bold] text-4xl text-white mt-2">VIETNAM DMS?</h2>
+                <div class="">
+                <img class="chooseUsImg" src="./images/choose-us-vector.png" alt="">
+                <div class="fourcols flex flex-col absolute lg:left-[40%] lg:top-[30%] lg:w-[60%] top-[30%] items-start gap-10">
+                          <div class="col1 w-full flex lg:flex-row flex-col items-start gap-5">
+                            <p class="lg:w-[40%]" >Intensive brand development strategy, with comprehensive solution system</p>
+                            <div class="lg:w-[60%] imgBox flex items-start">
+                                <img src="./images/vietnam-img1.png" alt="">
+                                <p class="-ml-16">Helping businesses minimize media and marketing costs</p>
+                              </div>
+                          </div>
+                         
+                          <div class="col1 w-full flex lg:flex-row flex-col items-start gap-5">
+                            <p class="lg:w-[40%]">Implement the plan by experienced and creative personnel</p>
+                            <div class="lg:w-[60%] imgBox flex lg:flex-row items-start">
+                                <img src="./images/vietnam-img2.png" alt="">
+                                <p>Intensive brand development strategy, with comprehensive solution system</p>
+                              </div>
+                          </div>
+                          
+
+                </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ----------Footer Section ----------- -->
+
+        <div class="footer bg-black w-full h-auto ">
+            <div class="containers flex flex-col footer justify-center items-center lg:h-screen ">
+                <div
+                    class="wrapper-text&iconBox relative w-full flex items-center justify-center lg:h-[100vh] h-[50vh]">
+                    <div
+                        class="w-full  text&iconBox flex flex-col items-center text-center bg-transparent absolute z-10 top-[30%] left-[0%] translate-x-1">
+                        <p class="text-[--orange-btn] text-[20px]">Let’s Work Together</p>
+                        <h2 class="text-2xl font-semibold leading-tight text-white sm:text-2xl lg:text-3xl">Speed Up
+                            Your Time To Market</h2>
+                        <a href="#" title=""
+                            class=" mt-16 items-center justify-center hidden px-10 py-1 text-white text-[20px] font-semibold bg-[color:var(--orange-btn)] transition-all duration-200 border border-transparent rounded-[50px] lg:inline-flex hover:bg-[color:var(--blue-btn)] focus:bg-[color:var(--orange-btn)]"
+                            role="button">Talk With Us</a>
+                    </div>
+                    <div
+                        class="iconSet absolute top-[10%] right-[20%] -translate-x-1/3 translate-y-1 rounded-[50%] flex items-center justify-center flex-col w-[450px] h-[450px] z-0">
+                    </div>
+                </div>
+                <div class="icon-wrapper relative z-10">
+                    <div class="container flex gap-10">
+                        <a class="hover:-mt-3 duration-500" href="#"><img src="./images/fb-icon.png" alt=""
+                                width="60"></a>
+                        <a class="hover:-mt-3 duration-500" href="#"><img src="./images/yt-icon.png" alt=""
+                                width="60"></a>
+                        <a class="hover:-mt-3 duration-500" href="#"><img src="./images/linked-icon.png" alt=""
+                                width="60"></a>
+                        <a class="hover:-mt-3 duration-500" href="#"><img src="./images/X-icon.png" alt=""
+                                width="60"></a>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <hr class="w-full lg:mt-10 my-2 h-[0.1px] bg-[#949494]">
+            <div class="flogo flex items-start justify-center flex-col container h-[10%] py-5">
+                <a href="index.html"><img src="./images/logo.svg" alt=""></a>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/animation.js"></script>
+
+</body>
+
+</html>

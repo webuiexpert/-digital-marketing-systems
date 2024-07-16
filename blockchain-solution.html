@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+    <!-- npx tailwindcss -i ./input.css -o ./style.css --watch -->
+    <title>Block Chain Marketing</title>
+</head>
+
+<body>
+    <div class="blockChain-wrapper overflow-hidden">
+        <div class="relative mainSection w-full lg:min-h-[120vh] h-[auto] py-10"
+            style="background: radial-gradient(#1E1E1E, #000) center, no-repeat;">
+            <div class="containers py-10 flex flex-col  justify-start items-center h-full">
+                <nav class="w-full absolute z-50 top-0 left-0 lg:py-4  lg:pb-0 bg-transparent">
+                    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                        <a class="navbarLogo" href="/digital-marketing-systems" class="flex items-center space-x-3 rtl:space-x-reverse">
+                            <img src="./images/logo.svg" alt="">
+                        </a>
+                        <button data-collapse-toggle="navbar-dropdown" type="button"
+                            class="inline-flex items-center p-2 w-10 bg-white h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-[#FE6B02] focus:outline-none focus:ring-2 focus:ring-[#FE6B02]"
+                            aria-controls="navbar-dropdown" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 17 14">
+                                <path stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                            </svg>
+                        </button>
+                        <div class="hidden w-full  md:block md:w-auto" id="navbar-dropdown">
+                            <ul
+                                class="navbarList flex lg:items-start flex-col font-medium p-4 md:p-0 mt-5 lg:bg-transparent lg:bg-white bg-[--blue-btn] text-white rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0">
+                                <li>
+                                    <a href="about-us.html"
+                                        class="block py-2 lg:mb-0 mb-3 px-3 text-white rounded  hover:text-[#FE6B02] md:p-0  dark:bg-blue-600 md:dark:bg-transparent"
+                                        aria-current="page">About Us</a>
+                                </li>
+                                <li
+                                    class="rounded-lg px-3 hover:bg-gray-100 hover:text-[#FE6B02] md:hover:bg-transparent md:border-0  md:w-auto dark:text-white md:hover:text-[#FE6B02] dark:focus:text-white relative z-50 ">
+                                    <button class="flex items-center justify-center">
+                                        <a href="services.html"
+                                            class="servicelink flex items-center justify-between w-full lg:py-0 py-2">Our Services
+                                        </a>
+                                        <svg id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                                            class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
+                                             fill="none" viewBox="0 0 10 6">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="m1 1 4 4 4-4" />
+                                        </svg>
+                                    </button>
+
+                                    <!-- Dropdown menu -->
+                                    <div id="dropdownNavbar"
+                                        class="dropservices hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                                            aria-labelledby="dropdownLargeButton">
+                                            <li>
+                                                <a href="digital-solution.html"
+                                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 hover:text-[#FE6B02]">Branding
+                                                    solution</a>
+                                            </li>
+                                            <li>
+                                                <a href="training-solution.html"
+                                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 hover:text-[#FE6B02]">Traning
+                                                    solution</a>
+                                            </li>
+                                            <li>
+                                                <a href="event-solution.html"
+                                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 hover:text-[#FE6B02]">Event
+                                                    solution</a>
+                                            </li>
+                                            <li>
+                                                <a href="blockchain-solution.html"
+                                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 hover:text-[#FE6B02]">Blockchain
+                                                    solution</a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </li>
+                                <li class="rounded-lg lg:mb-0 mb-4 px-3 lg:py-0 py-2 hover:bg-gray-100 hover:text-[#FE6B02] md:hover:bg-transparent md:border-0  md:w-auto dark:text-white md:hover:text-[#FE6B02] dark:focus:text-white >
+                                    <a href=" #" class="block py-2 text-white">Blog</a>
+                                </li>
+                                <li class="relative z-10">
+                                    <a href="#" title=""
+                                        class=" border items-start justify-start px-8 py-2 lg:ml-10 text-white text-base font-semibold bg-[color:var(--orange-btn)] transition-all duration-200  border-[#000] rounded-[50px] lg:inline-flex hover:bg-[color:var(--blue-btn)] focus:bg-[color:var(--orange-btn)]"
+                                        role="button">Let's Talk</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="headingPart lg:mt-32 mt-20  lg:px-0">
+                    <div class="imgheading flex lg:flex-row flex-col lg:items-center lg:gap-5 gap-2">
+                        <h2 class="lg:text-[82px] text-[45px] leading-[1.2em] text-white font-[Geomanist-bold]">THE
+                            SYNERGY OF</h2>
+                        <div class="arrowdiv w-32 lg:w-36"><img class="100%" src="./images/click-arrow.png" alt="">
+                        </div>
+
+                    </div>
+                    <div class="textpart flex lg:mt-0 mt-3 flex-col items-end">
+                        <h2
+                            class="lg:text-[82px] text-[45px] leading-[1.2em] lg:ml-20 text-white font-[Geomanist-bold] ">
+                            BLOCKCHAINS MARKETING</h2>
+                        <p class="lg:w-[570px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="iconText lg:w-[570px] lg:mt-10 mt-4 flex gap-5">
+                            <div class="icon1">
+                                <img src="./images/icon1.png" alt="" width="50">
+                                <h6 class="text-white font-[Geomanist-regular]">HIGH EFFICIENCY</h6>
+                                <p class="text-[12px] pb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed doe iusmod tempor incididunt ut</p>
+                                <a href="#" title=""
+                                    class="px-4 py-1 text-white  text-[12px] font-semibold bg-[color:var(--orange-btn)] transition-all duration-200 border border-transparent rounded-[50px] lg:inline-flex hover:bg-[color:var(--blue-btn)] focus:bg-[color:var(--orange-btn)]"
+                                    role="button">Talk With Us</a>
+                            </div>
+                            <div class="icon2">
+                                <img src="./images/icon2.png" alt="" width="50">
+                                <h6 class="text-white font-[Geomanist-regular]">LOW FEEL</h6>
+                                <p class="text-[12px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="positionPart lg:block hidden w-[100%] bg-red-300 absolute lg:top-[50%] left-0">
+                    <div class="relative">
+                        <div class="vecImg0 absolute lg:w-[40%] left-0 lg:top-10 top-10">
+                            <img class="w-full" src="./images/orange-bg-vector.png" alt="">
+                        </div>
+                        <div class="vecImg1 absolute w-[50%] lg:w-[20%] left-[8%] lg:-top-44">
+                            <img class="w-[100%]" src="./images/blockChain-vector1.png" alt="">
+                        </div>
+                        <div class="vecImg2  absolute w-[32%] lg:w-[10%] left-[32%] top-24">
+                            <img class="w-[100%]" src="./images/blockChain-vector2.png" alt="">
+                        </div>
+                        <div class="vecImg3 absolute w-[6%] lg:w-[15%] left-[12%] top-56">
+                            <img class="w-[100%]" src="./images/blockChain-vector3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="lg:py-20 py-10 blockChain-Brands bg-black">
+            <div class="px-4 containers">
+                <div class="grid items-center w-full grid-cols-2 mx-auto md:grid-cols-4 gap-x-10 gap-y-1">
+                    <div class="w-[100%]">
+                        <img class="object-contain size-full mx-auto" src="./images/Binance-logo.png" alt="" />
+                    </div>
+
+                    <div class="w-[100%]">
+                        <img class="object-contain size-full mx-auto" src="./images/coinbase-logo.png" alt="" />
+                    </div>
+
+                    <div class="w-[100%]">
+                        <img class="object-contain size-full mx-auto" src="./images/CoinGeko.png" alt="" />
+                    </div>
+
+                    <div class="w-[100%]">
+                        <img class="object-contain size-full" src="./images/Consbit-logo.png" alt="" />
+                    </div>
+
+                </div>
+                <div class="grid items-center lg:mt-10 mt-5 w-full grid-cols-2 mx-auto md:grid-cols-4 gap-x-10 gap-y-1">
+                    <div class="w-[100%]">
+                        <img class="object-contain size-full mx-auto" src="./images/Coinmarketcap-logo.png" alt="" />
+                    </div>
+
+                    <div class="w-[100%]">
+                        <img class="object-contain size-full mx-auto" src="./images/Cointelegraph-logo.png" alt="" />
+                    </div>
+
+                    <div class="w-[100%]">
+                        <img class="object-contain size-full mx-auto" src="./images/yahoo-finance-logo.png" alt="" />
+                    </div>
+
+                    <div class="w-[100%]">
+                        <img class="object-contain size-full" src="./images/PooCoin-logo.png" alt="" />
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="bg-[#0D0F19] body-font py-10">
+            <div class="containers">
+                <div class="flex flex-wrap w-full  flex-col items-center text-center">
+                    <h1 class="sm:text-1xl text-[16px] text-[--orange-btn] font-medium uppercase">About Us</h1>
+                    <h2 class=" text-white font-[Geomanist-bold]
+                    lg:text-[52px] text-[36px]">Expersite In Numbers</h2>
+                </div>
+                <div class="mt-10 grid lg:grid-cols-4 grid-cols-2 gap-3">
+                    <div class="flex items-center flex-col gap-3">
+                        <div class="size-12 ">
+                            <img src="./images/Clients-icon.svg" alt="">
+                        </div>
+                        <h2
+                            class="text-[#FE6B02] lg:text-[42px] text-[36px] text-center leading-[72px] font-[Geomanist-bold]">
+                            500+</h2>
+                        <p class="lg:text-[16px] text-[12px] -mt-2">Clients</p>
+                    </div>
+                    <div class="flex items-center flex-col gap-3">
+                        <div class="size-12 ">
+                            <img src="./images/experience-icon.png" alt="">
+                        </div>
+                        <h2
+                            class="text-[#FE6B02] lg:text-[42px] text-[36px] text-center leading-[72px] font-[Geomanist-bold]">
+                            4+</h2>
+                        <p class="lg:text-[16px] text-[12px] -mt-2 text-center">Years of Experience</p>
+                    </div>
+                    <div class="flex items-center flex-col gap-3">
+                        <div class="size-12 ">
+                            <img src="./images/crypto-icon.svg" alt="">
+                        </div>
+                        <h2
+                            class="text-[#FE6B02] lg:text-[42px] text-[36px] text-center leading-[72px] font-[Geomanist-bold]">
+                            1900+</h2>
+                        <p class="lg:text-[16px] text-[12px] -mt-2 text-center">Reviews by 1900+Verified Crypto
+                            Influencerson YouTube</p>
+                    </div>
+                    <div class="flex items-center flex-col gap-3">
+                        <div class="size-12 ">
+                            <img src="./images/publication-icon.svg" alt="">
+                        </div>
+                        <h2
+                            class="text-[#FE6B02] lg:text-[42px] text-[36px] text-center leading-[72px] font-[Geomanist-bold]">
+                            60+</h2>
+                        <p class="lg:text-[16px] text-[12px] -mt-2 text-center">Publications at Forbesand other
+                            60+Business & CryptoMedia</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <section class="ratedSection lg:py-10 py-10 bg-black">
+            <div class="containers ">
+                <div class="w-[80%] flex justify-center items-center mx-auto gap-10 lg:gap-20">
+                    <div class="imgBox w-[20%] lg:w-[14%]"><img class="mx-auto" src="./images/Rated-2023-img1.svg"
+                            alt=""></div>
+                    <div class="imgBox w-[20%] lg:w-[14%]"><img class="mx-auto" src="./images/Rated-2023-img2.svg"
+                            alt=""></div>
+                    <div class="imgBox w-[20%] lg:w-[14%]"><img class="mx-auto" src="./images/Rated-2023-img3.svg"
+                            alt=""></div>
+                    <div class="imgBox w-[20%] lg:w-[14%]"><img class="mx-auto" src="./images/Rated-2023-img4.svg"
+                            alt=""></div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-[#0D0F19] lg:py-20 py-10 body-font">
+            <div class="containers flex md:flex-row flex-col items-center">
+                <div
+                    class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-start text-center">
+                    <p class="leading-relaxed text-[#fff] text-[12px] mb-5 lg:text-[16px] text-[--orange-btn]">CRYPTO MARKETING SERVICES FOR ANY TYPE OF THE PROJECT</p>
+                    <h2 class="font-[Geomanist-bold] sm:text-6xl text-5xl mb-4 font-medium text-white">How we can help
+                        you
+                    </h2>
+                    <!-- --------Tabs Part-------- -->
+                    <div class='relative flex items-start justify-start w-[100%] lg:min-h-[50vh] mt-5'>
+                        <ul class=" grid max-w-full w-full grid-cols-3 lg:grid-cols-4 gap-5 text-white font-[Geomanist-regular]">
+                            <li class="">
+                                <input class="peer sr-only" type="radio" value="yes" name="answer" id="yes" checked />
+                                <label
+                                    class="flex justify-center cursor-pointer rounded-full border border-[#0668C1] py-2 px-4 hover:bg-[#FE6B02] focus:outline-none peer-checked:border-transparent peer-checked:ring-2 peer-checked:ring-[#0668C1] peer-checked:bg-[--orange-btn] transition-all duration-500 ease-in-out"
+                                    for="yes">NFT</label>
+
+                                <div
+                                    class="absolute  shadow-lg  left-0  mt-20 rounded-lg mx-auto transition-all duration-500 ease-in-out translate-x-40 opacity-0 invisible peer-checked:opacity-100 peer-checked:visible peer-checked:translate-x-1">
+                                    <ul class="list-disc text-white px-2 text-start">
+                                        <li>Publications at NFT Evening, NFTgators, NFT Plazas and other crypto media
+                                            and website</li>
+                                        <li>Reviews by 35+ NFT YouTube influencers and 550+ general Crypto Influencers
+                                        </li>
+                                    </ul>
+                                    <button
+                                        class="inline-flex text-white bg-[--blue-btn] mt-7 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">Sent
+                                        Brief</button>
+                                </div>
+                            </li>
+                            <li class="">
+                                <input class="peer sr-only" type="radio" value="no" name="answer" id="no" />
+                                <label
+                                    class="flex justify-center cursor-pointer rounded-full border border-[#0668C1] py-2 px-4 hover:bg-[#FE6B02] focus:outline-none peer-checked:border-transparent peer-checked:ring-2 peer-checked:ring-[#0668C1] peer-checked:bg-[--orange-btn] transition-all duration-500 ease-in-out"
+                                    for="no">Web 3.0</label>
+
+                                <div
+                                    class="absolute  shadow-lg  left-0  mt-20 rounded-lg mx-auto transition-all duration-500 ease-in-out translate-x-40 opacity-0 invisible peer-checked:opacity-100 peer-checked:visible peer-checked:translate-x-1">
+                                    <ul class="list-disc text-white px-2 text-start">
+                                        <li>Publications at NFT Evening, NFTgators, NFT Plazas and other crypto media
+                                            and website</li>
+                                        <li>Reviews by 35+ NFT YouTube influencers and 550+ general Crypto Influencers
+                                        </li>
+                                    </ul>
+                                    <button
+                                        class="inline-flex text-white bg-[--blue-btn] mt-7 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">Sent
+                                        Brief</button>
+                                </div>
+                            </li>
+                            <li class="">
+                                <input class="peer sr-only" type="radio" value="yesno" name="answer" id="yesno" />
+                                <label
+                                    class="flex justify-center cursor-pointer rounded-full border border-[#0668C1] py-2 px-4 hover:bg-[#FE6B02] focus:outline-none peer-checked:border-transparent peer-checked:ring-2 peer-checked:ring-[#0668C1] peer-checked:bg-[--orange-btn] transition-all duration-500 ease-in-out"
+                                    for="yesno">Metaverse</label>
+
+                                <div
+                                    class="absolute  shadow-lg  left-0  mt-20 rounded-lg mx-auto transition-all duration-500 ease-in-out translate-x-40 opacity-0 invisible peer-checked:opacity-100 peer-checked:visible peer-checked:translate-x-1">
+                                    <ul class="list-disc text-white px-2 text-start">
+                                        <li>Publications at NFT Evening, NFTgators, NFT Plazas and other crypto media
+                                            and website</li>
+                                        <li>Reviews by 35+ NFT YouTube influencers and 550+ general Crypto Influencers
+                                        </li>
+                                    </ul>
+                                    <button
+                                        class="inline-flex text-white bg-[--blue-btn] mt-7 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">Sent
+                                        Brief</button>
+                            </li>
+                            <li class="">
+                                <input class="peer sr-only" type="radio" value="ye1sno" name="answer" id="ye1sno" />
+                                <label
+                                    class="flex justify-center cursor-pointer rounded-full border border-[#0668C1] py-2 px-4 hover:bg-[#FE6B02] focus:outline-none peer-checked:border-transparent peer-checked:ring-2 peer-checked:ring-[#0668C1] peer-checked:bg-[--orange-btn] transition-all duration-500 ease-in-out"
+                                    for="ye1sno">GameFi</label>
+
+                                <div
+                                    class="absolute  shadow-lg  left-0  mt-5 rounded-lg mx-auto transition-all duration-500 ease-in-out translate-x-40 opacity-0 invisible peer-checked:opacity-100 peer-checked:visible peer-checked:translate-x-1">
+                                    <ul class="list-disc text-white px-2 text-start">
+                                        <li>Publications at NFT Evening, NFTgators, NFT Plazas and other crypto media
+                                            and website</li>
+                                        <li>GameFi Reviews by 35+ NFT YouTube influencers and 550+ general Crypto
+                                            Influencers
+                                        </li>
+                                    </ul>
+                                    <button
+                                        class="inline-flex text-white bg-[--blue-btn] mt-7 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">Sent
+                                        Brief</button>
+                            </li>
+                            <li class="">
+                                <input class="peer sr-only" type="radio" value="DeFi" name="answer" id="DeFi" />
+                                <label
+                                    class="flex justify-center cursor-pointer rounded-full border border-[#0668C1] py-2 px-4 hover:bg-[#FE6B02] focus:outline-none peer-checked:border-transparent peer-checked:ring-2 peer-checked:ring-[#0668C1] peer-checked:bg-[--orange-btn] transition-all duration-500 ease-in-out"
+                                    for="DeFi">DeFi</label>
+
+                                <div
+                                    class="absolute  shadow-lg  left-0  mt-5 rounded-lg mx-auto transition-all duration-500 ease-in-out translate-x-40 opacity-0 invisible peer-checked:opacity-100 peer-checked:visible peer-checked:translate-x-1">
+                                    <ul class="list-disc text-white px-2 text-start">
+                                        <li>Publications at NFT Evening, NFTgators, NFT Plazas and other crypto media
+                                            and website</li>
+                                        <li>GameFi Reviews by 35+ NFT YouTube influencers and 550+ general Crypto
+                                            Influencers
+                                        </li>
+                                    </ul>
+                                    <button
+                                        class="inline-flex text-white bg-[--blue-btn] mt-7 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">Sent
+                                        Brief</button>
+                            </li>
+                            <li class="">
+                                <input class="peer sr-only" type="radio" value="ico" name="answer" id="ico" />
+                                <label
+                                    class="flex justify-center cursor-pointer rounded-full border border-[#0668C1] py-2 px-4 hover:bg-[#FE6B02] focus:outline-none peer-checked:border-transparent peer-checked:ring-2 peer-checked:ring-[#0668C1] peer-checked:bg-[--orange-btn] transition-all duration-500 ease-in-out"
+                                    for="ico">ICO</label>
+
+                                <div
+                                    class="absolute  shadow-lg  left-0 mt-5 rounded-lg mx-auto transition-all duration-500 ease-in-out translate-x-40 opacity-0 invisible peer-checked:opacity-100 peer-checked:visible peer-checked:translate-x-1">
+                                    <ul class="list-disc text-white px-2 text-start">
+                                        <li>Publications at NFT Evening, NFTgators, NFT Plazas and other crypto media
+                                            and website</li>
+                                        <li>GameFi Reviews by 35+ NFT YouTube influencers and 550+ general Crypto
+                                            Influencers
+                                        </li>
+                                    </ul>
+                                    <button
+                                        class="inline-flex text-white bg-[--blue-btn] mt-7 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">Sent
+                                        Brief</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 lg:mt-0 mt-24">
+                    <img class="object-cover object-center rounded" alt="hero" src="./images/3d-SquareBox.svg">
+                </div>
+
+            </div>
+        </section>
+        <section class="blockService py-10 bg-black">
+            <div
+                class="containers lg:flex-grow lg:pr-24 md:pr-16 w-full  flex flex-col md:items-center md:text-left mb-16 md:mb-0 items-center justify-center">
+                <p class="leading-relaxed lg:text-[16px] text-[12px] text-center  text-[--orange-btn]">SERVICES</p>
+                <h2 class=" text-end font-[Geomanist-bold] sm:text-6xl text-5xl mb-4 font-medium text-white">Blockchain Marketing Menu</h2>
+                <!-- --------Tabs Part-------- -->
+                <div class='relative flex items-start justify-start w-[100%] lg:min-h-[70vh] min-h-[70vh] mt-10'>
+                    <ul
+                        class=" grid max-w-full w-[80%] float-start lg:grid-cols-5 grid-cols-3 gap-5  text-white font-[Geomanist-regular]">
+                        <li class="">
+                            <input class="peer sr-only" type="radio" value="Influencers" name="answer" id="Influencers"
+                                checked />
+                            <label
+                                class="flex justify-center cursor-pointer rounded-full border border-[#0668C1] py-2 px-4 hover:bg-[#FE6B02] focus:outline-none peer-checked:border-transparent peer-checked:ring-2 peer-checked:ring-[#0668C1] peer-checked:bg-[--orange-btn] transition-all duration-500 ease-in-out"
+                                for="Influencers">Influencers</label>
+
+                            <div
+                                class="absolute h-auto  shadow-lg  left-0 mt-20  lg:mt-36 rounded-lg mx-auto transition-all duration-500 ease-in-out translate-x-40 opacity-0 invisible peer-checked:opacity-100 peer-checked:visible peer-checked:translate-x-1">
+                                <div class="flex flex-wrap">
+                                    <div class=" xl:w-1/2 md:w-1/2">
+                                        <div class="serCol border-gray-200 p-6 rounded-[30px]">
+                                            <div
+                                                class="iconBox bg-[#F9BD3D] w-12 h-12 rounded-[10px] flex items-center justify-center p-2">
+                                                <img src="./images/branding-solution.png" alt="">
+                                            </div>
+                                            <h2 class="text-[26px] text-white font-medium title-font my-2">Branding
+                                                Solution</h2>
+                                            <p class="leading-relaxed text-base">Brand building consulting, Professional
+                                                brand identity
+                                                design, Press articles booking, Product promotion by hot
+                                                influencers/KOLs, etc.</p>
+                                            <button
+                                                class="flex items-center hoverArrow w-10 h-10 mt-3 relative border rounded-full duration-200 p-3">
+                                                <img class="w-[100%] absolute ml-3" src="./images/arrow-vector.svg"
+                                                    alt="" width="100">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- <div class=" xl:w-1/3 md:w-1/2 p-4">
+                                            <div class=" hovercol border-gray-200 p-6 rounded-[30px]">
+                                                <div
+                                                    class="iconBox bg-[#F9BD3D] w-12 h-12 rounded-[10px] flex items-center justify-center p-2">
+                                                    <img src="./images/branding-solution.png" alt="">
+                                                </div>
+                                                <h2 class="text-[26px] text-white font-medium title-font my-2">Branding Solution</h2>
+                                                <p class="leading-relaxed text-base">Brand building consulting, Professional brand identity
+                                                    design, Press articles booking, Product promotion by hot influencers/KOLs, etc.</p>
+                                                <button
+                                                    class="flex items-center hoverArrow w-10 h-10 mt-3 relative border rounded-full duration-200 p-3">
+                                                    <img class="w-[100%] absolute ml-3" src="./images/arrow-vector.svg" alt="" width="100">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class=" xl:w-1/3 md:w-1/2 p-4">
+                                            <div class=" hovercol border-gray-200 p-6 rounded-[30px]">
+                                                <div
+                                                    class="iconBox bg-[#F9BD3D] w-12 h-12 rounded-[10px] flex items-center justify-center p-2">
+                                                    <img src="./images/branding-solution.png" alt="">
+                                                </div>
+                                                <h2 class="text-[26px] text-white font-medium title-font my-2">Branding Solution</h2>
+                                                <p class="leading-relaxed text-base">Brand building consulting, Professional brand identity
+                                                    design, Press articles booking, Product promotion by hot influencers/KOLs, etc.</p>
+                                                <button
+                                                    class="flex items-center hoverArrow w-10 h-10 mt-3 relative border rounded-full duration-200 p-3">
+                                                    <img class="w-[100%] absolute ml-3" src="./images/arrow-vector.svg" alt="" width="100">
+                                                </button>
+                                            </div>
+                                        </div> -->
+                                </div>
+                            </div>
+                        </li>
+                        <li class="">
+                            <input class="peer sr-only" type="radio" value="Community" name="answer" id="Community" />
+                            <label
+                                class="flex justify-center cursor-pointer rounded-full border border-[#0668C1] py-2 px-4 hover:bg-[#FE6B02] focus:outline-none peer-checked:border-transparent peer-checked:ring-2 peer-checked:ring-[#0668C1] peer-checked:bg-[--orange-btn] transition-all duration-500 ease-in-out"
+                                for="Community">Community</label>
+
+                            <div
+                                class="absolute  shadow-lg  left-0 lg:mt-36 mt-20 rounded-lg mx-auto transition-all duration-500 ease-in-out translate-x-40 opacity-0 invisible peer-checked:opacity-100 peer-checked:visible peer-checked:translate-x-1">
+                                <div class="flex flex-wrap">
+                                    <div class=" xl:w-1/2 md:w-1/2">
+                                        <div class="serCol border-gray-200 p-6 rounded-[30px]">
+                                            <div
+                                                class="iconBox bg-[#F9BD3D] w-12 h-12 rounded-[10px] flex items-center justify-center p-2">
+                                                <img src="./images/branding-solution.png" alt="">
+                                            </div>
+                                            <h2 class="text-[26px] text-white font-medium title-font my-2">Branding
+                                                Solution</h2>
+                                            <p class="leading-relaxed text-base">Brand building consulting, Professional
+                                                brand identity
+                                                design, Press articles booking, Product promotion by hot
+                                                influencers/KOLs, etc.</p>
+                                            <button
+                                                class="flex items-center hoverArrow w-10 h-10 mt-3 relative border rounded-full duration-200 p-3">
+                                                <img class="w-[100%] absolute ml-3" src="./images/arrow-vector.svg"
+                                                    alt="" width="100">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- <div class=" xl:w-1/3 md:w-1/2 p-4">
+                                            <div class=" hovercol border-gray-200 p-6 rounded-[30px]">
+                                                <div
+                                                    class="iconBox bg-[#F9BD3D] w-12 h-12 rounded-[10px] flex items-center justify-center p-2">
+                                                    <img src="./images/branding-solution.png" alt="">
+                                                </div>
+                                                <h2 class="text-[26px] text-white font-medium title-font my-2">Branding Solution</h2>
+                                                <p class="leading-relaxed text-base">Brand building consulting, Professional brand identity
+                                                    design, Press articles booking, Product promotion by hot influencers/KOLs, etc.</p>
+                                                <button
+                                                    class="flex items-center hoverArrow w-10 h-10 mt-3 relative border rounded-full duration-200 p-3">
+                                                    <img class="w-[100%] absolute ml-3" src="./images/arrow-vector.svg" alt="" width="100">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class=" xl:w-1/3 md:w-1/2 p-4">
+                                            <div class=" hovercol border-gray-200 p-6 rounded-[30px]">
+                                                <div
+                                                    class="iconBox bg-[#F9BD3D] w-12 h-12 rounded-[10px] flex items-center justify-center p-2">
+                                                    <img src="./images/branding-solution.png" alt="">
+                                                </div>
+                                                <h2 class="text-[26px] text-white font-medium title-font my-2">Branding Solution</h2>
+                                                <p class="leading-relaxed text-base">Brand building consulting, Professional brand identity
+                                                    design, Press articles booking, Product promotion by hot influencers/KOLs, etc.</p>
+                                                <button
+                                                    class="flex items-center hoverArrow w-10 h-10 mt-3 relative border rounded-full duration-200 p-3">
+                                                    <img class="w-[100%] absolute ml-3" src="./images/arrow-vector.svg" alt="" width="100">
+                                                </button>
+                                            </div>
+                                        </div> -->
+
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="">
+                            <input class="peer sr-only" type="radio" value="Trafic" name="answer" id="Trafic" />
+                            <label
+                                class="flex justify-center cursor-pointer rounded-full border border-[#0668C1] py-2 px-4 hover:bg-[#FE6B02] focus:outline-none peer-checked:border-transparent peer-checked:ring-2 peer-checked:ring-[#0668C1] peer-checked:bg-[--orange-btn] transition-all duration-500 ease-in-out"
+                                for="Trafic">Trafic</label>
+
+                            <div
+                                class="absolute  shadow-lg  left-0  mt-20 rounded-lg mx-auto transition-all duration-500 ease-in-out translate-x-40 opacity-0 invisible peer-checked:opacity-100 peer-checked:visible peer-checked:translate-x-1">
+                                <ul class="list-disc text-white">
+                                    <li>Publications at NFT Evening, NFTgators, NFT Plazas and other crypto media
+                                        and website</li>
+                                    <li>Reviews by 35+ NFT YouTube influencers and 550+ general Crypto Influencers
+                                    </li>
+                                </ul>
+                                <button
+                                    class="inline-flex text-white bg-[--blue-btn] mt-7 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">Sent
+                                    Brief</button>
+                        </li>
+                        <li class="">
+                            <input class="peer sr-only" type="radio" value="Pr" name="answer" id="Pr" />
+                            <label
+                                class="flex justify-center cursor-pointer rounded-full border border-[#0668C1] py-2 px-4 hover:bg-[#FE6B02] focus:outline-none peer-checked:border-transparent peer-checked:ring-2 peer-checked:ring-[#0668C1] peer-checked:bg-[--orange-btn] transition-all duration-500 ease-in-out"
+                                for="Pr">Pr</label>
+
+                            <div
+                                class="absolute  shadow-lg  left-0  mt-20 rounded-lg mx-auto transition-all duration-500 ease-in-out translate-x-40 opacity-0 invisible peer-checked:opacity-100 peer-checked:visible peer-checked:translate-x-1">
+                                <ul class="list-disc text-white">
+                                    <li>Publications at NFT Evening, NFTgators, NFT Plazas and other crypto media
+                                        and website</li>
+                                    <li>GameFi Reviews by 35+ NFT YouTube influencers and 550+ general Crypto
+                                        Influencers
+                                    </li>
+                                </ul>
+                                <button
+                                    class="inline-flex text-white bg-[--blue-btn] mt-7 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">Sent
+                                    Brief</button>
+                        </li>
+                        <li class="">
+                            <input class="peer sr-only" type="radio" value="Packaging" name="answer" id="Packaging" />
+                            <label
+                                class="flex justify-center cursor-pointer rounded-full border border-[#0668C1] py-2 px-4 hover:bg-[#FE6B02] focus:outline-none peer-checked:border-transparent peer-checked:ring-2 peer-checked:ring-[#0668C1] peer-checked:bg-[--orange-btn] transition-all duration-500 ease-in-out"
+                                for="Packaging">Packaging</label>
+
+                            <div
+                                class="absolute  shadow-lg  left-0  mt-5 rounded-lg mx-auto transition-all duration-500 ease-in-out translate-x-40 opacity-0 invisible peer-checked:opacity-100 peer-checked:visible peer-checked:translate-x-1">
+                                <ul class="list-disc text-white">
+                                    <li>Publications at NFT Evening, NFTgators, NFT Plazas and other crypto media
+                                        and website</li>
+                                    <li>GameFi Reviews by 35+ NFT YouTube influencers and 550+ general Crypto
+                                        Influencers
+                                    </li>
+                                </ul>
+                                <button
+                                    class="inline-flex text-white bg-[--blue-btn] mt-7 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">Sent
+                                    Brief</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Swiper -->
+        <section class="w-full lg:py-20 py-10 relative bg-black">
+            <div class="containers flex justify-center items-center relative">
+                <div class="swiper mySwiper relative">
+                    <div class="headingBtn">
+                        <h2 class=" text-start font-[Geomanist-bold] sm:text-6xl text-3xl font-medium text-white">
+                            Testimonial </h>
+                    </div>
+
+                    <div class="lg:mt-20 relative swiper-wrapper text-white">
+                        <div class="swiper-slide w-full relative">
+                            <img class="" src="./images/Testimonial-bg-img.png" alt="">
+                            <div
+                                class="nameBox  absolute z-10 left-0 px-4 gap-5 top-24 flex flex-col justify-between items-start">
+                                <div class="authCont w-full flex justify-between items-start">
+                                    <div class="authBox w-1/2 flex justify-start gap-3 items-center">
+                                        <div class="authImg size-10 rounded-full bg-gray-300">
+                                            <img src="./images/baoan.svg" alt="">
+                                        </div>
+                                        <div class="authName">
+                                            <h4 class="text-start text-white font-24 font-[Geomanist-regular]">Name012
+                                            </h4>
+                                            <p class=" text-start text-[12px] text-gray-500">@abcxyz123</p>
+                                        </div>
+                                    </div>
+                                    <div class="sociIcon w-10">
+                                        <img src="./images/twitterIcon.svg" alt="">
+                                    </div>
+                                </div>
+
+                                <p class="text-start text-[14px]">Plan, optimize and improve advertising performance on
+                                    platforms such as Facebook, Google, Youtube, Tiktok, Twitter..etc.</p>
+                                <div class="dateBtn  flex justify-between items-center w-full mt-5">
+                                    <div class="month">
+                                        <p class="text-gray-500 text-[14px]">January 5, 2023</p>
+                                    </div>
+                                    <div class="viewBtn">
+                                        <p class="text-[#0668C1] text-[14px]">View in Twitter</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide w-full relative">
+                            <img class="" src="./images/Testimonial-bg-img.png" alt="">
+                            <div
+                                class="nameBox  absolute z-10 left-0 px-4 gap-5 top-24 flex flex-col justify-between items-start">
+                                <div class="authCont w-full flex justify-between items-start">
+                                    <div class="authBox w-1/2 flex justify-start gap-3 items-center">
+                                        <div class="authImg size-10 rounded-full bg-gray-300">
+                                            <img src="./images/baoan.svg" alt="">
+                                        </div>
+                                        <div class="authName">
+                                            <h4 class="text-start text-white font-24 font-[Geomanist-regular]">Name012
+                                            </h4>
+                                            <p class=" text-start text-[12px] text-gray-500">@abcxyz123</p>
+                                        </div>
+                                    </div>
+                                    <div class="sociIcon w-10">
+                                        <img src="./images/twitterIcon.svg" alt="">
+                                    </div>
+                                </div>
+
+                                <p class="text-start text-[14px]">Plan, optimize and improve advertising performance on
+                                    platforms such as Facebook, Google, Youtube, Tiktok, Twitter..etc.</p>
+                                <div class="dateBtn  flex justify-between items-center w-full mt-5">
+                                    <div class="month">
+                                        <p class="text-gray-500 text-[14px]">January 5, 2023</p>
+                                    </div>
+                                    <div class="viewBtn">
+                                        <p class="text-[#0668C1] text-[14px]">View in Twitter</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide w-full relative">
+                            <img class="" src="./images/Testimonial-bg-img.png" alt="">
+                            <div
+                                class="nameBox  absolute z-10 left-0 px-4 gap-5 top-24 flex flex-col justify-between items-start">
+                                <div class="authCont w-full flex justify-between items-start">
+                                    <div class="authBox w-1/2 flex justify-start gap-3 items-center">
+                                        <div class="authImg size-10 rounded-full bg-gray-300">
+                                            <img src="./images/baoan.svg" alt="">
+                                        </div>
+                                        <div class="authName">
+                                            <h4 class="text-start text-white font-24 font-[Geomanist-regular]">Name012
+                                            </h4>
+                                            <p class=" text-start text-[12px] text-gray-500">@abcxyz123</p>
+                                        </div>
+                                    </div>
+                                    <div class="sociIcon w-10">
+                                        <img src="./images/twitterIcon.svg" alt="">
+                                    </div>
+                                </div>
+
+                                <p class="text-start text-[14px]">Plan, optimize and improve advertising performance on
+                                    platforms such as Facebook, Google, Youtube, Tiktok, Twitter..etc.</p>
+                                <div class="dateBtn  flex justify-between items-center w-full mt-5">
+                                    <div class="month">
+                                        <p class="text-gray-500 text-[14px]">January 5, 2023</p>
+                                    </div>
+                                    <div class="viewBtn">
+                                        <p class="text-[#0668C1] text-[14px]">View in Twitter</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide w-full relative">
+                            <img class="" src="./images/Testimonial-bg-img.png" alt="">
+                            <div
+                                class="nameBox  absolute z-10 left-0 px-4 gap-5 top-24 flex flex-col justify-between items-start">
+                                <div class="authCont w-full flex justify-between items-start">
+                                    <div class="authBox w-1/2 flex justify-start gap-3 items-center">
+                                        <div class="authImg size-10 rounded-full bg-gray-300">
+                                            <img src="./images/baoan.svg" alt="">
+                                        </div>
+                                        <div class="authName">
+                                            <h4 class="text-start text-white font-24 font-[Geomanist-regular]">Name012
+                                            </h4>
+                                            <p class=" text-start text-[12px] text-gray-500">@abcxyz123</p>
+                                        </div>
+                                    </div>
+                                    <div class="sociIcon w-10">
+                                        <img src="./images/twitterIcon.svg" alt="">
+                                    </div>
+                                </div>
+
+                                <p class="text-start text-[14px]">Plan, optimize and improve advertising performance on
+                                    platforms such as Facebook, Google, Youtube, Tiktok, Twitter..etc.</p>
+                                <div class="dateBtn  flex justify-between items-center w-full mt-5">
+                                    <div class="month">
+                                        <p class="text-gray-500 text-[14px]">January 5, 2023</p>
+                                    </div>
+                                    <div class="viewBtn">
+                                        <p class="text-[#0668C1] text-[14px]">View in Twitter</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide w-full relative">
+                            <img class="" src="./images/Testimonial-bg-img.png" alt="">
+                            <div
+                                class="nameBox  absolute z-10 left-0 px-4 gap-5 top-24 flex flex-col justify-between items-start">
+                                <div class="authCont w-full flex justify-between items-start">
+                                    <div class="authBox w-1/2 flex justify-start gap-3 items-center">
+                                        <div class="authImg size-10 rounded-full bg-gray-300">
+                                            <img src="./images/baoan.svg" alt="">
+                                        </div>
+                                        <div class="authName">
+                                            <h4 class="text-start text-white font-24 font-[Geomanist-regular]">Name012
+                                            </h4>
+                                            <p class=" text-start text-[12px] text-gray-500">@abcxyz123</p>
+                                        </div>
+                                    </div>
+                                    <div class="sociIcon w-10">
+                                        <img src="./images/twitterIcon.svg" alt="">
+                                    </div>
+                                </div>
+
+                                <p class="text-start text-[14px]">Plan, optimize and improve advertising performance on
+                                    platforms such as Facebook, Google, Youtube, Tiktok, Twitter..etc.</p>
+                                <div class="dateBtn  flex justify-between items-center w-full mt-5">
+                                    <div class="month">
+                                        <p class="text-gray-500 text-[14px]">January 5, 2023</p>
+                                    </div>
+                                    <div class="viewBtn">
+                                        <p class="text-[#0668C1] text-[14px]">View in Twitter</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide w-full relative">
+                            <img class="" src="./images/Testimonial-bg-img.png" alt="">
+                            <div
+                                class="nameBox  absolute z-10 left-0 px-4 gap-5 top-24 flex flex-col justify-between items-start">
+                                <div class="authCont w-full flex justify-between items-start">
+                                    <div class="authBox w-1/2 flex justify-start gap-3 items-center">
+                                        <div class="authImg size-10 rounded-full bg-gray-300">
+                                            <img src="./images/baoan.svg" alt="">
+                                        </div>
+                                        <div class="authName">
+                                            <h4 class="text-start text-white font-24 font-[Geomanist-regular]">Name012
+                                            </h4>
+                                            <p class=" text-start text-[12px] text-gray-500">@abcxyz123</p>
+                                        </div>
+                                    </div>
+                                    <div class="sociIcon w-10">
+                                        <img src="./images/twitterIcon.svg" alt="">
+                                    </div>
+                                </div>
+
+                                <p class="text-start text-[14px]">Plan, optimize and improve advertising performance on
+                                    platforms such as Facebook, Google, Youtube, Tiktok, Twitter..etc.</p>
+                                <div class="dateBtn  flex justify-between items-center w-full mt-5">
+                                    <div class="month">
+                                        <p class="text-gray-500 text-[14px]">January 5, 2023</p>
+                                    </div>
+                                    <div class="viewBtn">
+                                        <p class="text-[#0668C1] text-[14px]">View in Twitter</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide w-full relative">
+                            <img class="" src="./images/Testimonial-bg-img.png" alt="">
+                            <div
+                                class="nameBox  absolute z-10 left-0 px-4 gap-5 top-24 flex flex-col justify-between items-start">
+                                <div class="authCont w-full flex justify-between items-start">
+                                    <div class="authBox w-1/2 flex justify-start gap-3 items-center">
+                                        <div class="authImg size-10 rounded-full bg-gray-300">
+                                            <img src="./images/baoan.svg" alt="">
+                                        </div>
+                                        <div class="authName">
+                                            <h4 class="text-start text-white font-24 font-[Geomanist-regular]">Name012
+                                            </h4>
+                                            <p class=" text-start text-[12px] text-gray-500">@abcxyz123</p>
+                                        </div>
+                                    </div>
+                                    <div class="sociIcon w-10">
+                                        <img src="./images/twitterIcon.svg" alt="">
+                                    </div>
+                                </div>
+
+                                <p class="text-start text-[14px]">Plan, optimize and improve advertising performance on
+                                    platforms such as Facebook, Google, Youtube, Tiktok, Twitter..etc.</p>
+                                <div class="dateBtn  flex justify-between items-center w-full mt-5">
+                                    <div class="month">
+                                        <p class="text-gray-500 text-[14px]">January 5, 2023</p>
+                                    </div>
+                                    <div class="viewBtn">
+                                        <p class="text-[#0668C1] text-[14px]">View in Twitter</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide w-full relative">
+                            <img class="" src="./images/Testimonial-bg-img.png" alt="">
+                            <div
+                                class="nameBox  absolute z-10 left-0 px-4 gap-5 top-24 flex flex-col justify-between items-start">
+                                <div class="authCont w-full flex justify-between items-start">
+                                    <div class="authBox w-1/2 flex justify-start gap-3 items-center">
+                                        <div class="authImg size-10 rounded-full bg-gray-300">
+                                            <img src="./images/baoan.svg" alt="">
+                                        </div>
+                                        <div class="authName">
+                                            <h4 class="text-start text-white font-24 font-[Geomanist-regular]">Name012
+                                            </h4>
+                                            <p class=" text-start text-[12px] text-gray-500">@abcxyz123</p>
+                                        </div>
+                                    </div>
+                                    <div class="sociIcon w-10">
+                                        <img src="./images/twitterIcon.svg" alt="">
+                                    </div>
+                                </div>
+
+                                <p class="text-start text-[14px]">Plan, optimize and improve advertising performance on
+                                    platforms such as Facebook, Google, Youtube, Tiktok, Twitter..etc.</p>
+                                <div class="dateBtn  flex justify-between items-center w-full mt-5">
+                                    <div class="month">
+                                        <p class="text-gray-500 text-[14px]">January 5, 2023</p>
+                                    </div>
+                                    <div class="viewBtn">
+                                        <p class="text-[#0668C1] text-[14px]">View in Twitter</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide w-full relative">
+                            <img class="" src="./images/Testimonial-bg-img.png" alt="">
+                            <div
+                                class="nameBox  absolute z-10 left-0 px-4 gap-5 sm:top-24 top-10 flex flex-col justify-between items-start">
+                                <div class="authCont w-full flex justify-between items-start">
+                                    <div class="authBox w-1/2 flex justify-start gap-3 items-center">
+                                        <div class="authImg size-10 rounded-full bg-gray-300">
+                                            <img src="./images/baoan.svg" alt="">
+                                        </div>
+                                        <div class="authName">
+                                            <h4 class="text-start text-white font-24 font-[Geomanist-regular]">Name012
+                                            </h4>
+                                            <p class=" text-start text-[12px] text-gray-500">@abcxyz123</p>
+                                        </div>
+                                    </div>
+                                    <div class="sociIcon w-10">
+                                        <img src="./images/twitterIcon.svg" alt="">
+                                    </div>
+                                </div>
+
+                                <p class="text-start text-[14px]">Plan, optimize and improve advertising performance on
+                                    platforms such as Facebook, Google, Youtube, Tiktok, Twitter..etc.</p>
+                                <div class="dateBtn  flex justify-between items-center w-full mt-5">
+                                    <div class="month">
+                                        <p class="text-gray-500 text-[14px]">January 5, 2023</p>
+                                    </div>
+                                    <div class="viewBtn">
+                                        <p class="text-[#0668C1] text-[14px]">View in Twitter</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                    </div>
+                    <div class="lg:hidden swiper-pagination"></div>
+                    <div class="arrowController lg:block hidden">
+                        <div class=" swiper-button-next">
+                        </div>
+                        <div class=" swiper-button-prev"></div>
+                    </div>
+                  
+
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#0D0F19] py-20">
+            <div class="containers">
+                <h2 class="text-4xl text-white text-center mb-10 font-[Geomanist-bold]">Get Access To <span
+                        class="text-[--orange-btn]">1900</span> YouTuber Influencers</h2>
+                <div class="flex flex-wrap -m-4">
+                    <div class="lg:w-1/3 sm:w-1/2 p-4 rounded-lg">
+                        <div class="flex relative rounded-[30px]">
+                            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+                                src="https://dummyimage.com/600x360">
+                            <div
+                                class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE
+                                    SUBTITLE</h2>
+                                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
+                                <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings
+                                    jianbing microdosing tousled waistcoat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/3 sm:w-1/2 p-4">
+                        <div class="flex relative">
+                            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+                                src="https://dummyimage.com/601x361">
+                            <div
+                                class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE
+                                    SUBTITLE</h2>
+                                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The Catalyzer</h1>
+                                <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings
+                                    jianbing microdosing tousled waistcoat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/3 sm:w-1/2 p-4">
+                        <div class="flex relative">
+                            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+                                src="https://dummyimage.com/603x363">
+                            <div
+                                class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE
+                                    SUBTITLE</h2>
+                                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
+                                <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings
+                                    jianbing microdosing tousled waistcoat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ----------Footer Section ----------- -->
+
+        <div class="footer bg-black w-full h-auto ">
+            <div class="containers flex flex-col footer justify-center items-center lg:h-screen ">
+                <div
+                    class="wrapper-text&iconBox relative w-full flex items-center justify-center lg:h-[100vh] h-[50vh]">
+                    <div
+                        class="w-full  text&iconBox flex flex-col items-center text-center bg-transparent absolute z-10 top-[30%] left-[0%] translate-x-1">
+                        <p class="text-[--orange-btn] text-[20px]">Let’s Work Together</p>
+                        <h2 class="text-2xl font-semibold leading-tight text-white sm:text-2xl lg:text-3xl">Speed Up
+                            Your Time To Market</h2>
+                        <a href="#" title=""
+                            class=" mt-16 items-center justify-center hidden px-10 py-1 text-white text-[20px] font-semibold bg-[color:var(--orange-btn)] transition-all duration-200 border border-transparent rounded-[50px] lg:inline-flex hover:bg-[color:var(--blue-btn)] focus:bg-[color:var(--orange-btn)]"
+                            role="button">Talk With Us</a>
+                    </div>
+                    <div
+                        class="iconSet absolute top-[10%] right-[20%] -translate-x-1/3 translate-y-1 rounded-[50%] flex items-center justify-center flex-col w-[450px] h-[450px] z-0">
+                    </div>
+                </div>
+                <div class="icon-wrapper relative z-10">
+                    <div class="containers flex gap-10">
+                        <a class="hover:-mt-3 duration-500" href="#"><img src="./images/fb-icon.png" alt=""
+                                width="60"></a>
+                        <a class="hover:-mt-3 duration-500" href="#"><img src="./images/yt-icon.png" alt=""
+                                width="60"></a>
+                        <a class="hover:-mt-3 duration-500" href="#"><img src="./images/linked-icon.png" alt=""
+                                width="60"></a>
+                        <a class="hover:-mt-3 duration-500" href="#"><img src="./images/X-icon.png" alt=""
+                                width="60"></a>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <hr class="w-full lg:mt-10 my-7 h-[0.1px] bg-[#949494]">
+            <div class="flogo flex items-start justify-center flex-col containers h-[10%] py-5">
+                <a href="#"><img src="./images/logo.svg" alt=""></a>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/animation.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
