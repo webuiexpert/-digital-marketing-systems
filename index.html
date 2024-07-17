@@ -14,12 +14,14 @@
 
 <body>
     <div class="home-wrapper overflow-hidden">
-        <div style="background: url('./images/hero-bg-img.png'); background-position: center; background-size: cover;"
+        <section
+            style="background: url('./images/hero-bg-img.png'); background-position: center; background-size: cover;"
             class="relative MainSection w-full lg:h-screen lg:py-0">
             <div class="containers lg:h-screen flex justify-center items-center flex-col lg:gap-16 gap-10">
                 <nav class="w-full absolute z-50 top-0 left-0 lg:py-4  lg:pb-0 bg-transparent">
                     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                        <a class="navbarLogo" href="/digital-marketing-systems" class="flex items-center space-x-3 rtl:space-x-reverse">
+                        <a class="navbarLogo" href="/digital-marketing-systems"
+                            class="flex items-center space-x-3 rtl:space-x-reverse">
                             <img src="./images/logo.svg" alt="">
                         </a>
                         <button data-collapse-toggle="navbar-dropdown" type="button"
@@ -28,8 +30,8 @@
                             <span class="sr-only">Open main menu</span>
                             <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                                 viewBox="0 0 17 14">
-                                <path stroke="#000" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                                <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M1 1h15M1 7h15M1 13h15" />
                             </svg>
                         </button>
                         <div class="hidden w-full  md:block md:w-auto" id="navbar-dropdown">
@@ -44,11 +46,12 @@
                                     class="rounded-lg px-3 hover:bg-gray-100 hover:text-[#FE6B02] md:hover:bg-transparent md:border-0  md:w-auto dark:text-white md:hover:text-[#FE6B02] dark:focus:text-white relative z-50 ">
                                     <button class="flex items-center justify-center">
                                         <a href="services.html"
-                                            class="servicelink flex items-center justify-between w-full lg:py-0 py-2">Our Services
+                                            class="servicelink flex items-center justify-between w-full lg:py-0 py-2">Our
+                                            Services
                                         </a>
                                         <svg id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-                                            class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
-                                             fill="none" viewBox="0 0 10 6">
+                                            class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" fill="none"
+                                            viewBox="0 0 10 6">
                                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                                 stroke-width="2" d="m1 1 4 4 4-4" />
                                         </svg>
@@ -95,16 +98,19 @@
                         </div>
                     </div>
                 </nav>
-                <div class="headingSection w-full items-center mt-36 flex-col pb-5">
+                <div class="headingSection lg:flex hidden w-full items-center mt-36 flex-col pb-5">
                     <h2 class="text-center font-[Geomanist-bold] text-white sm:text-[95px] text-[55px]">
                         <span class="">Digital</span>
                         <span class="z-20 relative">Marketing</span>
                     </h2>
-                    <div
-                        class="solutionBox lg:w-[65%] w-[90%] mx-auto grid grid-cols-3 ">
-                       <ul class="w-[100%]">
-                        <a href="services.html"><li style="background: url('./images/triangle-vector.svg');background-position: left;  background-size:20px; background-repeat: no-repeat; padding-left: 30px;" class="ml-10 font-[Geomanist-regular] text-[#FE6B02] text-3xl lg:text-5xl mx-1"> Solution</li></a>
-                       </ul>
+                    <div class="solutionBox lg:w-[65%] w-[90%] mx-auto grid grid-cols-3 ">
+                        <ul class="w-[100%]">
+                            <a href="services.html">
+                                <li style="background: url('./images/triangle-vector.svg');background-position: left;  background-size:20px; background-repeat: no-repeat; padding-left: 30px;"
+                                    class="ml-10 font-[Geomanist-regular] text-[#FE6B02] text-3xl lg:text-5xl mx-1">
+                                    Solution</li>
+                            </a>
+                        </ul>
 
 
                         <div class="w-[100%] heroimgBox -mt-28">
@@ -112,28 +118,50 @@
                         </div>
                         <div class="w-[100%] para">
                             <ul class="text-white font-[Geomanist-regular] text-start float-end lg:block">
-                                    <li><a href="digital-solution.html">branding</a></li>
-                                    <li><a href="digital-solution.html">digital marketing</a></li>
-                                    <li> <a href="training-solution.html">training</a></li>
-                                    <li><a href="event-solution.html">event</a></li>
-                                    <li><a href="blockchain-solution.html">blockchain</a></li>
+                                <li><a href="digital-solution.html">branding</a></li>
+                                <li><a href="digital-solution.html">digital marketing</a></li>
+                                <li> <a href="training-solution.html">training</a></li>
+                                <li><a href="event-solution.html">event</a></li>
+                                <li><a href="blockchain-solution.html">blockchain</a></li>
                             </ul>
                         </div>
 
                     </div>
                 </div>
-                <a class="downArrow  flex items-center justify-center w-full" href="#serviceContainer">
-                    <img class="w-20" src="./images/down-arrow-vector.svg" alt="">
-                    <img class="mouseScrol absolute w-5" src="./images/mouse-scroll.png" alt="">
-                </a>
+                <div
+                    class="mobHeadingSection lg:hidden sm:hidden md:hidden  containers flex flex-col items-center gap-5 justify-end h-[62vh]">
+                    <h2 class="text-[45px] font-[Geomanist-bold] text-white">Digital Marketing</h2>
+                    <img class="w-[50%]" src="./images/home-main-img.png" alt="">
+                    <ul class="w-[100%] flex items-center justify-center">
+                        <a href="services.html">
+                            <li style="background: url('./images/triangle-vector.svg');background-position: left;  background-size:20px; background-repeat: no-repeat; padding-left: 30px;"
+                                class="ml-10 font-[Geomanist-regular] text-[#FE6B02] text-3xl lg:text-5xl mx-1">
+                                Solution</li>
+                        </a>
+                    </ul>
+                    <ul
+                        class="text-white flex gap-[16px] text-[14px] font-[Geomanist-regular] text-start float-end lg:block">
+                        <li><a href="digital-solution.html">branding</a></li>
+                        <li><a href="digital-solution.html">digital marketing</a></li>
+                        <li> <a href="training-solution.html">training</a></li>
+                        <li><a href="event-solution.html">event</a></li>
+                        <li><a href="blockchain-solution.html">blockchain</a></li>
+                    </ul>
+                    <a class="downArrow  flex items-center justify-center w-full" href="#serviceContainer">
+                        <img class="lg:w-20 w-16" src="./images/down-arrow-vector.svg" alt="">
+                        <img class="mouseScrol absolute lg:w-5 w-4" src="./images/mouse-scroll.png" alt="">
+                    </a>
+                </div>
+
             </div>
-        </div>
+        </section>
         <section id="serviceContainer" class="serviceSection bg-black text-gray-600 body-font py-10">
             <div style="background: radial-gradient(#002F5A, #00294E, #000, #000);" class="containers py-10">
                 <h2 class="text-center text-5xl font-[Geomanist-bold] font-medium title-font mb-2 text-white">Services
                     We Can Help With</h2>
 
-                <div class="serviceContainer grid sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 lg:px-0 gap-2  px-2 grid-cols-1 mt-10">
+                <div
+                    class="serviceContainer grid sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 lg:px-0 gap-5  grid-cols-1 mt-10">
                     <a class="servCol" href="digital-solution.html">
                         <div class="w-full lg:p-4 p-0">
                             <div class="hovercol border-gray-200 p-6 rounded-[30px]">
@@ -157,11 +185,12 @@
                         <div class="w-full lg:p-4 p-0">
                             <div class=" hovercol border-gray-200 p-6 rounded-[30px]">
                                 <div
-                                    class="iconBox bg-[#F9BD3D] w-12 h-12 rounded-[10px] flex items-center justify-center p-2">
+                                    class="iconBox bg-[#FB7643] w-12 h-12 rounded-[10px] flex items-center justify-center p-2">
                                     <img src="./images/digital-solution.png" alt="">
                                 </div>
                                 <h2 class="text-[24px] text-white font-medium title-font my-2">Digital Solution</h2>
-                                <p class="leading-relaxed text-[14px]">Plan, optimize and improve advertising performance
+                                <p class="leading-relaxed text-[14px]">Plan, optimize and improve advertising
+                                    performance
                                     on
                                     platforms such as Facebook, Google, Youtube, Tiktok, Twitter..etc.</p>
                                 <button
@@ -176,7 +205,7 @@
                         <div class="w-full lg:p-4 p-0">
                             <div class=" hovercol border-gray-200 p-6 rounded-[30px]">
                                 <div
-                                    class="iconBox bg-[#F9BD3D] w-12 h-12 rounded-[10px] flex items-center justify-center p-2">
+                                    class="iconBox bg-[#D9A228] w-12 h-12 rounded-[10px] flex items-center justify-center p-2">
                                     <img src="./images/training-solution.png" alt="">
                                 </div>
                                 <h2 class="text-[24px] text-white font-medium title-font my-2">Training Solution</h2>
@@ -195,7 +224,7 @@
                         <div class="w-full lg:p-4 p-0">
                             <div class=" hovercol border-gray-200 p-6 rounded-[30px]">
                                 <div
-                                    class="iconBox bg-[#F9BD3D] w-12 h-12 rounded-[10px] flex items-center justify-center p-2">
+                                    class="iconBox bg-[#F6A364] w-12 h-12 rounded-[10px] flex items-center justify-center p-2">
                                     <img src="./images/event-solution.png" alt="">
                                 </div>
                                 <h2 class="text-[24px] text-white font-medium title-font my-2">Event Solution</h2>
@@ -213,7 +242,7 @@
                         <div class="w-full lg:p-4 p-0">
                             <div class=" hovercol border-gray-200 p-6 rounded-[30px]">
                                 <div
-                                    class="iconBox bg-[#F9BD3D] w-12 h-12 rounded-[10px] flex items-center justify-center p-2">
+                                    class="iconBox bg-[#2295EB] w-12 h-12 rounded-[10px] flex items-center justify-center p-2">
                                     <img src="./images/blockChain-solution.png" alt="">
                                 </div>
                                 <h2 class="text-[24px] text-white font-medium title-font my-2">Blockchain Solution</h2>
@@ -234,48 +263,42 @@
             </div>
         </section>
         <section id="storyBox" class="bg-black text-gray-600 body-font">
-            <div class="containers lg:py-0 lg:p-0 px-2 grid lg:grid-cols-2 grid-cols-1">
-                <div id=""
-                    class="storyHeading containers flex flex-wrap -mx-4 mt-auto mb-auto lg:w-[100%] sm:w-2/3 content-start sm:pr-10">
-                    <div class="w-full sm:p-4 mb-6">
-                        <h2 class="title-font font-medium text-4xl mb-2 text-white">Story About Us</h2>
-                        <div class="leading-relaxed text-white text-[14px]">Over the course of 4 years of construction
-                            and development, Vietnam DMS has become one of the leading agencies in the field of
-                            Marketing and Training.<br>
-                            Vietnam DMS implements projects by thoroughly researching all business Structure of an
-                            enterprise based on clear and specific goals.<br>
-                            With the strengths in media, technology and personnel with many years of experience, we
-                            confidently accompany businesses on the path of sustainable development. Therefore, we can
-                            fully exploit the power of media to make the trademarked business grow and grow stronger.
-                        </div>
-                    </div>
-                    <div class="meetTeam flex justify-between w-full items-center">
-                        <div class="p-4 sm:w-1/2 lg:w-2/1 w-full flex items-center">
-                            <a href="#"" class=" items-center justify-center px-10  text-white py-3 lg:text-[20px]
-                                text-xs font-semibold bg-[color:var(--blue-btn)] transition-all duration-200 border
-                                border-transparent rounded-[50px] lg:inline-flex hover:bg-[color:var(--orange-btn)]
+            <div class="containers  lg:py-10 flex flex-col  lg:flex-row ">
+                <div class="storyHeading flex flex-wrap w-full lg:w-[100%] gap-5 ">
+                    <h2 class="title-font font-medium text-4xl mb-2 text-white">Story About Us</h2>
+                    <p class="leading-relaxed text-white text-[14px] w-[90%]">Over the course of 4 years of construction
+                        and development, Vietnam DMS has become one of the leading agencies in the field of
+                        Marketing and Training.<br>
+                        Vietnam DMS implements projects by thoroughly researching all business Structure of an
+                        enterprise based on clear and specific goals.<br>
+                        With the strengths in media, technology and personnel with many years of experience, we
+                        confidently accompany businesses on the path of sustainable development. Therefore, we can
+                        fully exploit the power of media to make the trademarked business grow and grow stronger.</p>
+                    <div class="meetTeam flex lg:flex-row flex-col justify-start w-full items-center">
+                        <div class="w-full flex lg:justify-start justify-center lg:items-start items-center">
+                            <a href="#"" class=" items-center justify-center px-10 text-white py-3 lg:text-[20px]
+                                text-xs font-semibold bg-[color:var(--blue-btn)] transition-all duration-200
+                                rounded-[50px] lg:inline-flex hover:bg-[color:var(--orange-btn)]
                                 focus:bg-[color:var(--orange-btn)]" role="button">Meet Our Team</a>
                         </div>
-                        <div class="p-4 sm:w-1/4 lg:w-1/4 w-1/3">
-                            <h2 class="title-font font-medium text-3xl text-[#FE6B02]">100+</h2>
+                        <div class="p-4 sm:w-1/4 lg:w-1/4 w-1/3 lg:border-0 border-b">
+                            <h2 class="title-font text-center font-medium text-3xl text-[#FE6B02]">100+</h2>
                             <p class="leading-relaxed">Downloads</p>
                         </div>
-                        <div class="bg-white w-1 h-[100%]"></div>
+                        <div class="bg-white w-1 lg:block hidden h-[100%]"></div>
                         <div class="p-4 sm:w-1/4 lg:w-1/4 w-1/2">
-                            <h2 class="title-font font-medium text-3xl text-[#FE6B02]">6000+</h2>
-                            <p class="leading-relaxed">Products</p>
+                            <h2 class="title-font text-center font-medium text-3xl text-[#FE6B02]">6000+</h2>
+                            <p class="leading-relaxed text-center">Products</p>
                         </div>
                     </div>
 
                 </div>
-                <div
-                    class="containers storyImg lg:w-[100%] p-0 sm:w-1/3 w-full rounded-lg overflow-hidden lg:pb-0 pb-10 mt-6 sm:mt-0">
-                    <img class="object-cover object-center w-full h-full" src="./images/storySection-img.png"
-                        alt="stats">
+                <div class="storyImg lg:w-[100%] sm:w-1/3 w-full rounded-lg overflow-hidden lg:pb-0 pb-10 mt-6 sm:mt-0">
+                    <img class="w-full h-full" src="./images/storySection-img.png" alt="stats">
                 </div>
             </div>
         </section>
-        <div class="partnerSection py-10 w-full bg-[#0D0F19]">
+        <section class="partnerSection py-10 w-full bg-[#0D0F19]">
             <div class="containers mt-10 flex lg:flex-row flex-col  justify-between items-center gap-y-10 ">
                 <div class="lcol lg:w-[90%] w-full">
                     <h2 class="title-font font-medium text-4xl mb-2 text-white">Our Partner</h2>
@@ -286,18 +309,18 @@
                         advancements and communication
                     </div>
                     <div class="brands grid grid-cols-5 mt-10">
-                       <a href="google.com"><img class="w-[100%]" src="./images/google.svg" alt="Google"></a> 
-                       <a href="facebook.com"><img class="w-[100%]" src="./images/facebook.svg" alt="facebook"></a> 
-                       <a href="tiktok.com"><img class="w-[100%]" src="./images/tiktok.svg" alt="tiktok"></a> 
-                       <a href="x.com"><img class="w-[100%]" src="./images/twitter.svg" alt="twitter"></a> 
+                        <a href="google.com"><img class="w-[100%]" src="./images/google.svg" alt="Google"></a>
+                        <a href="facebook.com"><img class="w-[100%]" src="./images/facebook.svg" alt="facebook"></a>
+                        <a href="tiktok.com"><img class="w-[100%]" src="./images/tiktok.svg" alt="tiktok"></a>
+                        <a href="x.com"><img class="w-[100%]" src="./images/twitter.svg" alt="twitter"></a>
                     </div>
                 </div>
                 <div class="rcol lg:w-10%">
-                    <img class="100%" src="/images/partners-img.png" alt="">
+                    <img class="100%" src="./images/partners-img.png" alt="">
                 </div>
             </div>
-        </div>
-        <div class="clientSection py-10 bg-[#000] w-full">
+        </section>
+        <section class="clientSection py-10 bg-[#000] w-full">
             <div class="containers">
                 <h2 class="title-font font-medium text-4xl mb-2 text-white">Our Clinet</h2>
                 <div class="leading-relaxed text-white text-[14px] lg:w-[610px]">Our client base is a testament to our
@@ -306,43 +329,61 @@
                     eclectic mix not only illustrates our versatile expertise but also our drive to excel in a diverse
                     array of industries, emphasizing our role in driving innovation and cultivating long-term success.
                 </div>
-                <div class="slidemovingcontainers bg-white w-full  rounded-[10px] relative mt-10 flex overflow-hidden">
-                    <div class="slideleft py-3 whitespace-nowrap flex">
-                        <div class=" whitespace-nowrap slideleft brand-logo"><img src="./images/Hana.svg" alt="brand-images"></div>
-                        <div class=" whitespace-nowrap slideleft brand-logo"><img src="./images/ivirese.svg" alt="brand-images"></div>
-                        <div class=" whitespace-nowrap slideleft brand-logo"><img src="./images/Aristino.svg" alt="brand-images"></div>
-                        <div class=" whitespace-nowrap slideleft brand-logo"><img src="./images/SSpace.svg" alt="brand-images"></div>
-                        <div class=" whitespace-nowrap slideleft brand-logo"><img src="./images/TerraBook.svg" alt="brand-images"></div>
-                        <div class=" whitespace-nowrap slideleft brand-logo"><img src="./images/blockChain.svg" alt="brand-images"></div>
-                        <div class=" whitespace-nowrap slideleft brand-logo"><img src="./images/baoan.svg" alt="brand-images"></div>
-                        <div class=" whitespace-nowrap slideleft brand-logo"><img src="./images/soeTech.svg" alt="brand-images"></div>
-                        <div class=" whitespace-nowrap slideleft brand-logo"><img src="./images/Kofee.svg" alt="brand-images"></div>
-                        <div class=" whitespace-nowrap slideleft brand-logo"><img src="./images/bidv.svg" alt="brand-images"></div>
-                       
+                <div class="logos bg-white w-full  rounded-[10px]  mt-10 flex overflow-hidden">
+                    <div class="logosSlideleft w-full flex ">
+                        <img src="./images/Hana.svg" alt="brand-images">
+                        <img src="./images/ivirese.svg" alt="brand-images">
+                        <img src="./images/Aristino.svg" alt="brand-images">
+                        <img src="./images/SSpace.svg" alt="brand-images">
+                        <img src="./images/TerraBook.svg" alt="brand-images">
+                        <img src="./images/blockChain.svg" alt="brand-images">
+                        <img src="./images/baoan.svg" alt="brand-images">
+                        <img src="./images/soeTech.svg" alt="brand-images">
+                        <img src="./images/Kofee.svg" alt="brand-images">
+                        <img src="./images/bidv.svg" alt="brand-images">
+                        <img src="./images/ivirese.svg" alt="brand-images">
+                        <img src="./images/Aristino.svg" alt="brand-images">
+                        <img src="./images/SSpace.svg" alt="brand-images">
+                        <img src="./images/TerraBook.svg" alt="brand-images">
+                        <img src="./images/blockChain.svg" alt="brand-images">
+                        <img src="./images/baoan.svg" alt="brand-images">
+                        <img src="./images/soeTech.svg" alt="brand-images">
+                        <img src="./images/Kofee.svg" alt="brand-images">
+                        <img src="./images/bidv.svg" alt="brand-images">
                     </div>
-                    
-                </div>
-                <div class="slidemovingcontainers bg-white w-full rounded-[10px]  relative flex mt-10 overflow-hidden">
-                    <div
-                    class="slideright w-full py-3 bg-whiteh-36 whitespace-nowrap flex overflow-hidden">
-                    <div class=" whitespace-nowrap slideleft brand-logo"><img src="./images/sam.svg" alt="brand-images"></div>
-                    <div class=" whitespace-nowrap slideleft brand-logo"><img src="./images/mobifone.svg" alt="brand-images"></div>
-                    <div class=" whitespace-nowrap slideleft brand-logo"><img src="./images/bigbom.svg" alt="brand-images"></div>
-                    <div class=" whitespace-nowrap slideleft brand-logo"><img src="./images/fpt-software.svg" alt="brand-images"></div>
-                    <div class=" whitespace-nowrap slideleft brand-logo"><img src="./images/ftp-scohool.svg" alt="brand-images"></div>
-                    <div class=" whitespace-nowrap slideleft brand-logo"><img src="./images/vicofa.svg" alt="brand-images"></div>
-                    <div class=" whitespace-nowrap slideleft brand-logo"><img src="./images/topodon.svg" alt="brand-images"></div>
-                    <div class=" whitespace-nowrap slideleft brand-logo"><img src="./images/beverly.svg" alt="brand-images"></div>
-                    <div class=" whitespace-nowrap slideleft brand-logo"><img src="./images/Datxanh.svg" alt="brand-images"></div>
-                    <div class=" whitespace-nowrap slideleft brand-logo"><img src="./images/ecoPremia.svg" alt="brand-images"></div>
-                    <div class=" whitespace-nowrap slideleft brand-logo"><img src="./images/vinbus.svg" alt="brand-images"></div>
-                    <div class=" whitespace-nowrap slideleft brand-logo"><img src="./images/vingroup.svg" alt="brand-images"></div>
-                </div>
-                </div>
-               
-            </div>
 
-        </div>
+                </div>
+
+                <div class="logos bg-white w-full  rounded-[10px]  mt-10 flex overflow-hidden">
+                    <div class="logosSlideright w-full flex flex-row-reverse">
+                        <img src="./images/sam.svg" alt="brand-images">
+                        <img src="./images/mobifone.svg" alt="brand-images">
+                        <img src="./images/bigbom.svg" alt="brand-images">
+                        <img src="./images/fpt-software.svg" alt="brand-images">
+                        <img src="./images/ftp-scohool.svg" alt="brand-images">
+                        <img src="./images/vicofa.svg" alt="brand-images">
+                        <img src="./images/topodon.svg" alt="brand-images">
+                        <img src="./images/beverly.svg" alt="brand-images">
+                        <img src="./images/Datxanh.svg" alt="brand-images">
+                        <img src="./images/ecoPremia.svg" alt="brand-images">
+                        <img src="./images/vinbus.svg" alt="brand-images">
+                        <img src="./images/vingroup.svg" alt="brand-images">
+                        <img src="./images/sam.svg" alt="brand-images">
+                        <img src="./images/mobifone.svg" alt="brand-images">
+                        <img src="./images/bigbom.svg" alt="brand-images">
+                        <img src="./images/fpt-software.svg" alt="brand-images">
+                        <img src="./images/ftp-scohool.svg" alt="brand-images">
+                        <img src="./images/vicofa.svg" alt="brand-images">
+                        <img src="./images/topodon.svg" alt="brand-images">
+                        <img src="./images/beverly.svg" alt="brand-images">
+                        <img src="./images/Datxanh.svg" alt="brand-images">
+                        <img src="./images/ecoPremia.svg" alt="brand-images">
+                        <img src="./images/vinbus.svg" alt="brand-images">
+                        <img src="./images/vingroup.svg" alt="brand-images">
+
+                </div>
+
+        </section>
 
         <!-- ----------Footer Section ----------- -->
 
@@ -353,10 +394,10 @@
                     <div
                         class="w-full  text&iconBox flex flex-col items-center text-center bg-transparent absolute z-10 top-[30%] left-[0%] translate-x-1">
                         <p class="text-[--orange-btn] text-[20px]">Let’s Work Together</p>
-                        <h2 class="text-2xl font-semibold leading-tight text-white sm:text-2xl lg:text-3xl">Speed Up
+                        <h2 class="text-2xl font-semibold leading-tight text-white sm:text-2xl lg:text-5xl">Speed Up
                             Your Time To Market</h2>
                         <a href="#" title=""
-                            class=" mt-16 items-center justify-center hidden px-10 py-1 text-white text-[20px] font-semibold bg-[color:var(--orange-btn)] transition-all duration-200 border border-transparent rounded-[50px] lg:inline-flex hover:bg-[color:var(--blue-btn)] focus:bg-[color:var(--orange-btn)]"
+                            class=" mt-16 items-center justify-center px-10 py-1 text-white text-[20px] font-normal bg-[color:var(--orange-btn)] transition-all duration-200 border border-transparent rounded-[50px] lg:inline-flex hover:bg-[color:var(--blue-btn)] focus:bg-[color:var(--orange-btn)]"
                             role="button">Talk With Us</a>
                     </div>
                     <div
@@ -365,29 +406,28 @@
                 </div>
                 <div class="icon-wrapper relative z-10">
                     <div class="containers flex gap-10">
-                        <a class="hover:-mt-3 duration-500" href="facebook.com"><img src="./images/fb-icon.png" alt=""
-                                width="60"></a>
-                        <a class="hover:-mt-3 duration-500" href="youtube.com"><img src="./images/yt-icon.png" alt=""
-                                width="60"></a>
-                        <a class="hover:-mt-3 duration-500" href="linkedin.in"><img src="./images/linked-icon.png" alt=""
-                                width="60"></a>
-                        <a class="hover:-mt-3 duration-500" href="x.com"><img src="./images/X-icon.png" alt=""
-                                width="60"></a>
+                        <a class="hover:-mt-3 lg:w-[60px] w-[40px] duration-500" href="facebook.com"><img
+                                src="./images/fb-icon.png" alt=""></a>
+                        <a class="hover:-mt-3 duration-500 lg:w-[60px] w-[40px]" href="youtube.com"><img
+                                src="./images/yt-icon.png" alt=""></a>
+                        <a class="hover:-mt-3 duration-500 lg:w-[60px] w-[40px]" href="linkedin.in"><img
+                                src="./images/linked-icon.png" alt=""></a>
+                        <a class="hover:-mt-3 duration-500 lg:w-[60px] w-[40px]" href="x.com"><img
+                                src="./images/X-icon.png" alt=""></a>
                     </div>
                 </div>
 
 
 
             </div>
-            <hr class="w-full lg:mt-10 my-7 h-[0.1px] bg-[#949494]">
-            <div class="flogo flex items-start justify-center flex-col containers h-[10%] py-5">
+            <hr class="w-full lg:mt-10 my-4 h-[0.1px] bg-[#949494]">
+            <div class="flogo flex lg:items-start items-center justify-center flex-col containers h-[10%] lg:pb-5 pb-2">
                 <a href="#"><img src="./images/logo.svg" alt=""></a>
             </div>
 
 
         </div>
     </div>
-
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
@@ -396,7 +436,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/animation.js"></script>
     <script src="./js/script.js"></script>
-
 
 </body>
 

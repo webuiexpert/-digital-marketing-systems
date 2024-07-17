@@ -67,6 +67,7 @@ p{
     transition: all ease 2s;
     box-shadow: -2px -1px 0 1px  #055094;
 }
+
 .hovercol:hover .hoverArrow{
     transition: all ease 1s;
     width: 35%;
@@ -85,19 +86,44 @@ p{
 
 
 /* -------Animation Keyframes--------- */
-/* @keyframes slideleft {
-    0% {
-      transform: translateX(0);
+
+    @keyframes slideleft {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(-100%);
+        }
     }
-    100% {
-      transform: translateX(-100%);
+    @keyframes slideright {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(100%);
+        }
     }
-  }
-  .slideleft {
-    animation: slide-in 8000ms;
-    animation-timing-function: linear;
-  } */
-/* ----testimonial section----- */
+
+    .logosSlideleft {
+        animation: 40s slideleft infinite linear;
+    }
+    .logosSlideright {
+        animation: 40s slideright infinite linear;
+    }
+
+    .logos {
+        white-space: nowrap;
+    }
+    .logos:hover .logosSlideright{
+        animation-play-state: paused;
+    }
+    .logos:hover .logosSlideleft {
+        animation-play-state: paused;
+    }
+
+/* -------Animation Keyframes End--------- */
 
 .swiper {
     width: 100%;
@@ -122,10 +148,23 @@ p{
 
 
 /* media start here */
-@media (300px <= width <= 800px)
+@media (320px <= width <= 800px)
 {
     .containers{
         width: 100% !important;
-        padding: 0 10px;
+        padding: 0 15px !important;
     }
+    .hovercol{
+      background: #021A30;
+      transition: all ease 2s;
+      box-shadow: -2px -1px 0 1px  #055094;
+    }
+    .hovercol .hoverArrow{
+      transition: all ease 1s;
+      width: 35%;
+  }
+  .hovercol .hoverArrow img{
+      width: 75%;
+      margin: 0;
+  }
 }
