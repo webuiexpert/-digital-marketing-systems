@@ -245,3 +245,20 @@ var tl6 = gsap.timeline()
         repeat:-1
     })
     
+
+    gsap.from(".festivalsSection",{
+        y:300,
+        duration:2,
+        delay:0.2,
+        scrollTrigger:{
+            trigger:".festivals",
+            scroller: "body",
+            markers: false,
+            start: "top 90%",
+            end: "bottom 50%",
+            scrub:3
+
+
+        }
+
+    })
