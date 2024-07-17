@@ -125,6 +125,14 @@ p{
 
 /* -------Animation Keyframes End--------- */
 
+.servicelink:hover .dropservices{
+  display: flex;
+}
+.dropservices{
+    display: none;
+margin-left: -80px !important;
+}
+
 .swiper {
     width: 100%;
     height: 100%;
@@ -144,6 +152,56 @@ p{
     height: 100%;
     object-fit: cover;
   }
+
+  /* ---------blockchain solution styling----- */
+
+    .testimonialSection .containers{
+        position: relative;
+        width: 100%;
+        }
+
+    .swiper-button-prev{
+        background-color: #232633;
+        padding: 20px !important;
+        width: 40px !important;
+        height: 40px !important;
+        border-radius: 100% !important;
+        font-size: 1px !important;
+        position: absolute !important;
+        top: 20% !important;
+        left: 92% !important;
+    }
+    .swiper-button-next{
+        background-color: #232633;
+        padding: 20px !important;
+        width: 40px !important;
+        height: 40px !important;
+        border-radius: 100% !important;
+        font-size: 1px !important;
+        position: absolute !important;
+        top: 20% !important;
+        right: 0% !important;
+    }
+    .swiper-button-prev::after{
+       font-size: 18px !important;
+       font-weight: 900 !important;
+    }
+    .swiper-button-next::after{
+       font-size: 18px !important;
+       font-weight: 900 !important;
+    }
+    @media (320px <= width <= 800px)
+{
+    .swiper-button-prev{
+        top:7% !important;
+        left: 76% !important;
+    }
+    .swiper-button-next{
+        top: 7% !important;
+        right: 0% !important;
+    }
+
+}
 
 
 
@@ -167,4 +225,10 @@ p{
       width: 75%;
       margin: 0;
   }
+  .dropservices{
+    display: none;
+margin-left: 0 !important;
+margin-top: 30px !important;
+}
+
 }
