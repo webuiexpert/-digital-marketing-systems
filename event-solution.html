@@ -12,7 +12,7 @@
 
 <body>
     <div class="eventSolution-Wrapper bg-black overflow-hidden">
-        <div class="mainSection w-full h-[70vh] lg:h-screen py-10"
+        <div class="relative mainSection w-full h-[70vh] lg:h-screen py-10"
             style="background-image: url('./images/hero-bg-img.png');background-position:center ;background-repeat: no-repeat;background-size: cover;">
             <div class="containers h-[100%] flex flex-col justify-between items-center">
                 <nav class="w-full absolute z-50 top-0 left-0 lg:py-4  lg:pb-0 bg-transparent">
@@ -101,7 +101,7 @@
 
                     </div>
                     <div class="w-[50%] z-10 animateImg absolute -top-20 lg:-top-20 left-44 lg:left-72">
-                        <img class="100%" src="./images/eventSolution-vector.png" alt="">
+                        <img class="100% hidden" src="./images/eventSolution-vector.png" alt="">
                     </div>
 
                 </div>
@@ -110,6 +110,10 @@
                     <img class="mouseScrol absolute lg:w-5 w-4" src="./images/mouse-scroll.png" alt="">
                 </a>
             </div>
+        </div>
+        <div class="absolute lg:block hidden left-0 top-0 splineAnimation">
+            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.0/build/spline-viewer.js"></script>
+            <spline-viewer url="https://prod.spline.design/GXs43qLndd5PDHgS/scene.splinecode"></spline-viewer>
         </div>
         <section id="festivals" class="sm:py-20 py-10">
             <div class="festivalsSection containers">
